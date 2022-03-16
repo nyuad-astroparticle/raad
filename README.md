@@ -38,9 +38,15 @@ If/Once ssh is already set up open a terminal by doing so in the following Opera
 - **Ubuntu**
 1. Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>
 
-With an open terminal type the following command
+There are two computers you can connect to. The NUC for day to day tasks, and the High Performance Computer in the lab.
+
+With an open terminal type the following command to connect to the NUC
 ```shell
 $ ssh nyuad@RAAD.abudhabi.nyu.edu
+```
+To connect to the High Performance computer for more intensive tasks type the follwoing
+```shell
+$ ssh raad@arneodolab.abudhabi.nyu.edu
 ```
 
 And that's it! You have connected to the RAAD Workstation!
