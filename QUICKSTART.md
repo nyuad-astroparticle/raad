@@ -75,3 +75,5 @@ Always add a message using the `-m` modifier, otherwise `git` does not allow the
 ```shell
 $ git push
 ```
+
+The online repository can be found at: [https://github.com/nyuad-astroparticle/raad](https://github.com/nyuad-astroparticle/raad).
