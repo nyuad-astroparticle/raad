@@ -125,3 +125,8 @@ $ conda install cartopy
 $ conda install holoviews
 ```
 After this you should be done. Congratulations! Now you can analyze TGF data!
+
+**Note!:** If you want to install additional packages please try to install through `conda-forge` using the following command:
+```shell
+$ conda install <PACKAGE NAME>
+```
