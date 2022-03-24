@@ -74,6 +74,8 @@ By the way, here is a list of useful conda commands just in case: [https://docs.
 
 ## Creating the RAAD conda environment
 
+(If you need to uninstall an existing environment you can follow: [https://docs.conda.io/projects/conda/en/latest/commands/remove.html](https://docs.conda.io/projects/conda/en/latest/commands/remove.html))
+
 Now that we have a working conda installation we are ready to create an environment. However, before we go all ballistic and download packages, it is ideal to do some housekeeping. We will install a bunch of packages from different sources using `conda`, as a result we need to make sure that if one depends on the other, one knows where to look for the other to load it properly. So it would be better to tell `conda install` to get its packages from the same source. To do this, we will to set as out primary source of packages `conda-forge` because it contains a lot more packages than others (read more about this [here](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)). To do this we type:
 ```shell
 $ conda config --env --add channels conda-forge
