@@ -76,7 +76,7 @@ class event:
 
 # Since we will be working with tgf arrays so much we will create
 # Another class called TGF Array that has methods to handle an array of TGFs
-class event_array:
+class array:
     event_types = ['fermi','light-1','lightning']
 
     # Constructor
@@ -108,7 +108,7 @@ class event_array:
 
     # Overload the [] opeartor to be able to do tgf_array[1] etc.
     def __getitem__(self,i):
-        if type(i) == list: return event_array([self.events[index] for index in i])
+        if type(i) == list: return array([self.events[index] for index in i])
         else: return self.events[i]
 
     # Overload the [] operator to be able to do tgf_array[1] = 3 etc.
@@ -174,7 +174,7 @@ class event_array:
         if append: self.events += tgfs
 
         # Otherwise return them as a different tgf_array
-        else: return event_array(tgfs)
+        else: return array(tgfs)
 
     # Generate an array of lightnings from a file
     def lightning_from_file(self,filename:str,append:bool=True):
@@ -198,14 +198,14 @@ class event_array:
         if append: self.events += lights
 
         # Otherwise return them as a different tgf_array
-        else: return event_array(lights)
+        else: return array(lights)
     
     def from_file(self,filename:str,event_type:str=event_types[0],append:bool=True):
         # Choose the appropriate function to load the data
-        if   event_type == event_array.event_types[0]:
+        if   event_type == array.event_types[0]:
             return self.fermi_from_file(filename=filename, append=append)
         
-        elif event_type == event_array.event_types[2]:
+        elif event_type == array.event_types[2]:
             return self.lightning_from_file(filename=filename, append=append)
 
 
@@ -215,11 +215,11 @@ class event_array:
 ##################################################################################
 
 # Visualize a set of TGFs on a map
-def map(tgfs,lightnings:event_array=None):
+def map(tgfs,lightnings:array=None):
     # If it is a single point, convert it into an array
-    if type(tgfs)   == list:        tgfs = event_array(tgfs)
-    elif type(tgfs) == event:       tgfs = event_array([tgfs])
-    elif type(tgfs) != event_array: raise Exception("type %s is not an event object nor a list. Please enter a TGF object"%type(tgfs))
+    if type(tgfs)   == list:        tgfs = array(tgfs)
+    elif type(tgfs) == event:       tgfs = array([tgfs])
+    elif type(tgfs) != array: raise Exception("type %s is not an event object nor a list. Please enter a TGF object"%type(tgfs))
 
     # Convert the points to GeoViews points
     points = gv.Points([tgfs.get_coords()])
@@ -251,9 +251,9 @@ def map(tgfs,lightnings:event_array=None):
 
 
 # Print the closest lightnings
-def get_nearby_lightning(tgf,lightnings:event_array,threshold:float=1):
+def get_nearby_lightning(tgf,lightnings:array,threshold:float=1):
     # If we are given an array of TGFs
-    if type(tgf) == event_array:
+    if type(tgf) == array:
         # Create a list to output the lighning arrays for each event
         lightnings = []
 
@@ -281,6 +281,6 @@ def get_nearby_lightning(tgf,lightnings:event_array,threshold:float=1):
         # Get the appropriate subarray
         return lightnings[idx]
 
-    # if it is not of type event of event_array then raise an error
+    # if it is not of type event of array then raise an error
     else:
-        raise Exception("Type %s is not of type event, or event_array. Please use an object of type event or event_array for the tgf"%type(tgf))
+        raise Exception("Type %s is not of type event, or array. Please use an object of type event or array for the tgf"%type(tgf))
