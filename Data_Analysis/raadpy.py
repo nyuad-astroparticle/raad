@@ -7,6 +7,10 @@ from astropy.time import Time, TimeDelta
 import pandas as pd
 import numpy as np
 import geoviews as gv
+import datetime as dt
+import requests
+from lxml import html
+from gzip import decompress
 from tqdm import tqdm
 gv.extension('bokeh', 'matplotlib')
 
@@ -20,6 +24,36 @@ def in_range(longitude):
     return longitude if longitude <= 180 else longitude - 360
 
 
+# Get an astropy time object, and return a string with the timestamp in epoch
+def get_epoch_date(date_time):
+    # Convert to datetime
+    date = date_time.to_datetime()
+    date = dt.datetime(date.year,date.month,date.day)
+
+    # Return a string with just the date
+    return str(int(Time(date).to_value('unix')))
+
+# Get an astropy object, and retun a string with the time in epoch
+def get_epoch_time(date_time):
+    # Get just the date
+    date = date_time.to_datetime()
+    date = dt.datetime(date.year,date.month,date.day)
+
+    # Subtract the date from the original datetime to get the time
+    time = date_time.to_datetime() - date
+
+    return str(time.seconds)
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 ##################################################################################
@@ -284,3 +318,94 @@ def get_nearby_lightning(tgf,lightnings:array,threshold:float=1):
     # if it is not of type event of array then raise an error
     else:
         raise Exception("Type %s is not of type event, or array. Please use an object of type event or array for the tgf"%type(tgf))
+
+# Give it two astropy Time objects and get back a raadpy list for the lighnings
+def download_lightnings_range(start_Time:Time, end_Time:Time,VERBOSE=True):
+    # Get the strings for the timestamps
+    start_time  = get_epoch_time(start_Time)
+    start_date  = get_epoch_date(start_Time)
+
+    end_time    = get_epoch_time(end_Time)
+    end_date    = get_epoch_date(end_Time)
+
+    
+    # Here are our login info
+    payload = {
+        "login_username" : "nyuad_ls",
+        "login_password" : "RAADsat3U",
+        "login_try" : "1"
+    }
+
+    # This will keep our session alive while we log in
+    session = requests.Session()
+
+    # Have our session logged in
+    url_login = 'https://www.blitzortung.org/en/login.php'
+    url = '/en/login.php'
+    # result = session.get(url_login)
+    # tree = html.fromstring(result.text)
+    result = session.post(
+        url_login,
+        data = payload
+    )
+
+
+    # Request the archived data
+    url_archive = "https://www.blitzortung.org/en/archive_data.php?stations_users=0&selected_numbers=*&end_date="+end_date+"&end_time="+end_time+"&start_date="+start_date+"&start_time="+start_time+"&rawdata_image=0&north=90&west=-180&east=180&south=-90&map=0&width_orig=640&width_result=640&agespan=60&frames=12&delay=100&last_delay=1000&show_result=1"
+    
+    # Get the data website
+    result = session.get(url_archive)
+    tree = html.fromstring(result.content)
+
+    # Find the iframe url
+    src = 'https://www.blitzortung.org/' + np.array(tree.xpath("/html/body//iframe/@src"))[0]
+
+    # request that url
+    result = session.get(src)
+    tree = html.fromstring(result.content)
+
+    # Grab the file url:
+    a = np.array(tree.xpath("/html/body//a/@href"))
+    file_url = 'https://www.blitzortung.org/' + a[['archive' in url and 'raw.txt' in url for url in a]][0]
+
+    if VERBOSE: print(bcolors.OKCYAN+'Found Lightning data at: '+bcolors.ENDC+url_archive)
+
+    # Get the raw file and parse it
+    raw  = decompress(requests.get(file_url).content).decode('utf-8').split('\n')
+
+    if VERBOSE: print(bcolors.OKCYAN+'Data Downloaded Successfully'+bcolors.ENDC)
+    
+    # Create the array
+    lights  = []
+    # For all the lightnings in the loaded dataset
+    for data in raw[1:-1]:
+        # Create an event and append it to the array
+        datum = data.split(',')
+        lights.append(event(timestamp   = float(datum[0]) * 1e-9,
+                            longitude   = in_range(float(datum[2])), 
+                            latitude    = float(datum[1]),
+                            detector_id = 'Blitz',
+                            event_id    = datum[2],
+                            mission     = 'Blitzurtong',
+                            time_format = 'unix',
+                            event_type  = 'Lightning'))
+ 
+    # Return the numpy array for the file
+    return array(lights)
+
+
+# Give a timestamp and a threshold, and then the code will download close (in time) lightnings
+def download_lightnings(event_time:Time,threshold:float = 6*60,VERBOSE=True):
+    # Check if the threhsold is within the range
+    if threshold <= 5*60:
+        print(bcolors.WARNING+"Warning!"+bcolors.ENDC+" Threshold: %f s, is too small to be detected by Blitzortung! Using threshold = 6 * 60 s instead."%(threshold))
+        threshold = 6*60
+
+    # Get the timedelta object that corresponds to the threshold
+    threshold = TimeDelta(threshold,format='sec')
+
+    if VERBOSE:
+        print(bcolors.OKCYAN+'Searching for Lightnings between:'+bcolors.ENDC+'\n\t start-time: %s\n\t end-time:   %s'
+                %((event_time-threshold).to_value('iso'),(event_time+threshold).to_value('iso')))
+
+    return download_lightnings_range(event_time-threshold,event_time+threshold,VERBOSE=VERBOSE)
