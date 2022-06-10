@@ -1,0 +1,2389 @@
+# Start Of Script 20 May 2022 17:18:41.923
+fs list
+fs clear 32
+script delay 20000
+fs clear 33
+script delay 20000
+fs clear 34
+script delay 20000
+fs clear 35
+script delay 20000
+fs clear 36
+script delay 20000
+fs clear 37
+script delay 20000
+fs clear 38
+script delay 20000
+fs clear 39
+script delay 20000
+fs clear 40
+script delay 20000
+rtc read
+script delayuntil 1653067421
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653070721
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653072821
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653076121
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653078221
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653081521
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653083621
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653086921
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653089021
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653092321
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653094421
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653097721
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653099821
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653103121
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653105221
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653108521
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+rtc read
+script delayuntil 1653126958
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653130258
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653132358
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653135658
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653137758
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653141058
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+rtc read
+script delayuntil 1653156136
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653159436
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653161536
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653164836
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653166936
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653170236
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653172336
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653175636
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653177736
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653181036
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653183136
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653186436
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653188536
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653191836
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+rtc read
+script delayuntil 1653210132
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653213432
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653215532
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653218832
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653220932
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653224232
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+rtc read
+script delayuntil 1653239335
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653242635
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653244735
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653248035
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653250135
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653253435
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653255535
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653258835
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653260935
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653264235
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653266335
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653269635
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653271735
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653275035
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+rtc read
+script delayuntil 1653293267
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653296567
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653298667
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653301967
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+script delayuntil 1653304067
+csp txrx 4 14 600 000800201C
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100
+script delay 1000
+csp txrx 4 14 600 000A010100
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 60000
+rtc read
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 5000
+csp txrx 12 8 3000 08
+script delay 5000
+csp txrx 13 8 3000 01
+script delay 20000
+rtc read
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 10000
+csp txrx 12 8 3000 00
+script delay 10000
+csp txrx 13 8 3000 00
+script delay 180000
+rtc read
+script delay 3500
+rtc read
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+script delay 40000
+csp txrx 12 9 3000 00000009400F001690010016
+script delay 10000
+csp txrx 13 9 3000 0F0F0F09B80B041008076810
+rtc read
+script delay 4500
+rtc read
+script delayuntil 1653307367
+rtc read
+csp txrx 12 4 3000 08
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000
+fs list
+# End Of Script 23 May 2022 12:57:28.853
