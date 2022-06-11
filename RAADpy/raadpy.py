@@ -4,6 +4,9 @@
 
 # Import necessary Libraries
 from astropy.time import Time, TimeDelta
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from matplotlib.ticker import AutoMinorLocator
 import pandas as pd
 import numpy as np
 import geoviews as gv
@@ -11,9 +14,43 @@ import datetime as dt
 import requests
 from lxml import html
 from gzip import decompress
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 gv.extension('bokeh', 'matplotlib')
 
+##################################################################################
+# Useful Constants
+##################################################################################
+data_dir        = '../../Data/RAW/'        # Filename with directories
+BYTE            = 8                        # Byte length
+ORBIT_STRUCT    = {
+    'timestamp'     : 32,
+    'temperature'   : 8,
+    'rate0'         : 12,
+    'rate1'         : 12,
+    'rate2'         : 12,
+    'rate3'         : 12,
+    'ratev'         : 8,
+    'hv_level'      : 12,
+    'veto_level'    : 12,
+    'id_bit'        : 1,
+    'pps_active'    : 1,
+    'suspended'     : 1,
+    'power_on'      : 1,
+    'scenario'      : 4,
+}
+
+VETO_STRUCT     = {
+    'channel'       : 2,
+    'adc_counts'    : 14,
+    'veto'          : 8,
+    'stimestamp'    : 40, 
+}
+
+NONVETO_STRUCT  = {
+    'channel'       : 2,
+    'adc_counts'    : 14,
+    'stimestamp'    : 48,
+}
 
 ##################################################################################
 # Helper functions
@@ -54,7 +91,6 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-
 
 ##################################################################################
 # Classes
@@ -343,7 +379,7 @@ def download_lightnings_range(start_Time:Time, end_Time:Time,VERBOSE=True):
     url_login = 'https://www.blitzortung.org/en/login.php'
     url = '/en/login.php'
     # result = session.get(url_login)
-    # tree = html.fromstring(result.text)
+    # tree = html.fromstring(result.text)f
     result = session.post(
         url_login,
         data = payload
@@ -409,3 +445,107 @@ def download_lightnings(event_time:Time,threshold:float = 6*60,VERBOSE=True):
                 %((event_time-threshold).to_value('iso'),(event_time+threshold).to_value('iso')))
 
     return download_lightnings_range(event_time-threshold,event_time+threshold,VERBOSE=VERBOSE)
+
+# We create a function that given a bytestring extracts the ith bit:
+def get_bit(i:int,string):
+    '''
+    Gets the ith bit from a python bytestring from the left
+
+    Input:
+    i: int --> index (frist bit is 0)
+    string --> the bytestring 
+    '''
+
+    # Which byte does the bit lie into?
+    byte_idx    = i//BYTE               # Integer division
+    assert(byte_idx < len(string))      # Assert that the index is in the bytestring
+    byte        = string[byte_idx]      # Get the appropriate byte
+    bit_idx     = i - byte_idx * BYTE   # Get the index within the byte
+
+    # Get the ith bit
+    return (byte & (1 << (BYTE - bit_idx - 1))) >> (BYTE - bit_idx - 1)
+
+# Helper function to give the index of the nth bit in a Bytestring
+def get_bit_idx(n:int):
+    return BYTE - 1 - n%BYTE + (n//BYTE) * BYTE
+
+# Get range of bits
+def get_bits(start:int,length:int,string):
+    '''
+    Gets length bits after and including index start
+
+    Input:
+    start:  int --> Start index included
+    length: int --> Length of bits to obtain
+    string      --> The bytestring
+    '''
+
+    # Collect the bytes and add them up
+    digit_sum = 0
+    for i in range(start,start+length):
+        digit_sum += 2**(i-start) * get_bit(get_bit_idx(i),string)
+
+    return digit_sum
+
+# Create a dictionary of orbits from a file
+def get_dict(filename:str,struct=ORBIT_STRUCT,condition:str=None):
+    # Read the raw data
+    file = open(filename,'rb')  # Open the file in read binary mode
+    raw = file.read()           # Read all the file
+    file.close()                # Close the file
+
+    # Initialize the dictionary
+    data = dict(zip(struct.keys(),[np.array(list()) for _ in range(len(ORBIT_STRUCT.keys()))]))
+
+    # Number of bytes per line
+    bytes_per_line = sum(list(struct.values()))//8
+
+    for i in tqdm(range(len(raw)//bytes_per_line),desc='Line: '):
+        # Get the required number of bytes to an event
+        event = raw[i*bytes_per_line:(i+1)*bytes_per_line]
+
+        # Keep track of the number of bits read
+        bits_read = 0
+
+        # If not create an orbit
+        for name,length in struct.items():
+            data[name] = np.append(data[name],[get_bits(bits_read,length,event)])
+            bits_read += length
+    
+    if condition is not None:
+        try:
+            idx     = np.where(eval(condition))[0]
+            data    = dict(zip(struct.keys(),[arr[idx] for arr in data.values()]))
+        except:
+            print(bcolors.WARNING+'WARNING!' + bcolors.ENDC +' Condition ' + condition + ' is not valid for the dataset you requested. The data returned will not be filtered')
+
+    # Return the dictionary
+    return data
+
+# Plot the dictionary data obtained from a buffer:
+def plot_buffer(data,title='Plots of Buffer data'):
+    # Get the keys and event numbers
+    keys    = list(data.keys())
+    events  = range(len(data[keys[0]]))
+    colors  = cm.get_cmap('Dark2').colors
+
+    # Create a figure
+    fig, axes = plt.subplots((len(keys)+1)//2,2,sharex=True,figsize=(20,4*len(keys)//2),dpi=200)
+    fig.subplots_adjust(top=0.95)
+    fig.suptitle(title,fontsize=18)
+    axes = axes.flatten()
+
+    # Plot each of the data points
+    for i,key,ax in zip(range(len(axes)),keys,axes):
+        ax.plot(events,data[key],c=colors[i%len(colors)],lw=0.7)
+        ax.set_title(key.title())
+
+        # Customize the plot style
+        ax.tick_params(axis='both',which='both',direction='in',top=True,right=True)
+        ax.xaxis.set_minor_locator(AutoMinorLocator())
+        ax.yaxis.set_minor_locator(AutoMinorLocator())
+        ax.grid(axis='both', which='major', lw=0.25)
+        ax.grid(axis='both', which='minor', lw=0.2, ls=':')
+        
+
+    return fig,axes
