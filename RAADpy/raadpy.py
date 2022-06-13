@@ -3,10 +3,12 @@
 #############################
 
 # Import necessary Libraries
+from operator import le
 from astropy.time import Time, TimeDelta
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.ticker import AutoMinorLocator
+from matplotlib.colors import to_hex
 import pandas as pd
 import numpy as np
 import geoviews as gv
@@ -48,8 +50,8 @@ VETO_STRUCT     = {
 
 NONVETO_STRUCT  = {
     'channel'       : 2,
-    'adc_counts'    : 14,
-    'stimestamp'    : 48,
+    'adc_counts'    : 10,
+    'stimestamp'    : 36,
 }
 
 ##################################################################################
@@ -488,7 +490,7 @@ def get_bits(start:int,length:int,string):
     return digit_sum
 
 # Create a dictionary of orbits from a file
-def get_dict(filename:str,struct=ORBIT_STRUCT,condition:str=None):
+def get_dict(filename:str,struct=ORBIT_STRUCT,condition:str=None,MAX=None):
     # Read the raw data
     file = open(filename,'rb')  # Open the file in read binary mode
     raw = file.read()           # Read all the file
@@ -498,9 +500,11 @@ def get_dict(filename:str,struct=ORBIT_STRUCT,condition:str=None):
     data = dict(zip(struct.keys(),[np.array(list()) for _ in range(len(ORBIT_STRUCT.keys()))]))
 
     # Number of bytes per line
-    bytes_per_line = sum(list(struct.values()))//8
+    bytes_per_line  = sum(list(struct.values()))//8
+    length          = len(raw)//bytes_per_line
+    if MAX is None: MAX = length
 
-    for i in tqdm(range(len(raw)//bytes_per_line),desc='Line: '):
+    for i in tqdm(range(MAX),desc='Line: '):
         # Get the required number of bytes to an event
         event = raw[i*bytes_per_line:(i+1)*bytes_per_line]
 
@@ -549,3 +553,64 @@ def plot_buffer(data,title='Plots of Buffer data'):
         
 
     return fig,axes
+
+# Split the dataset in channels
+def split_channels(data,struct=NONVETO_STRUCT):
+    # Split the data based on their channels
+    channels    = []
+    for channel in np.unique(data['channel']):
+        idx         = np.where(data['channel'] == channel)[0]
+        channels.append(dict(zip(struct.keys(),[arr[idx] for arr in data.values()])))
+    
+    return channels
+
+# Plot histograms of the energies
+def plot_hists(data,struct=NONVETO_STRUCT,bins=600,RANGE=None):
+    # Get the splitted channels
+    channels = split_channels(data,struct)
+
+    # Create a figure
+    fig,ax  = plt.subplots(len(channels),1,figsize=(15,4*len(channels)),dpi=200,sharex=True)
+    ax      = ax.flatten()
+    colors  = cm.get_cmap('Dark2').colors
+
+    # Plot the histogram of each channel
+    for i,channel in enumerate(channels):
+        ax[i].hist(channel['adc_counts'],bins=bins,range=RANGE,color=colors[i%len(channels)])
+
+        ax[i].set_title('Energy of Channel: %d'%i)
+        ax[i].set_yscale('log')
+        ax[i].tick_params(axis='both',which='both',direction='in',top=True,right=True)
+        ax[i].xaxis.set_minor_locator(AutoMinorLocator())
+        ax[i].grid(axis='both', which='major', lw=0.25)
+        ax[i].grid(axis='both', which='minor', lw=0.2, ls=':')
+
+    return fig,ax
+
+# Plots the timestamps of the measurements by channel
+def plot_timestamps(data,struct=NONVETO_STRUCT,RANGE=None):
+    # Get the splitted channels
+    channels = split_channels(data,struct)
+
+    # Create a figure
+    fig,ax  = plt.subplots(len(channels),1,figsize=(15,4*len(channels)),dpi=200,sharex=True)
+    ax      = ax.flatten()
+    colors  = cm.get_cmap('Dark2').colors
+
+    # Plot the histogram of each channel
+    for i,channel in enumerate(channels):
+        length   = len(channel['stimestamp'])
+        if RANGE is None: _RANGE = (0,length)
+        else: _RANGE = RANGE
+
+        ax[i].plot   (range(*_RANGE),channel['stimestamp'][_RANGE[0]:_RANGE[1]],c=to_hex(colors[i%len(channels)]),lw=0.4)
+        ax[i].scatter(range(*_RANGE),channel['stimestamp'][_RANGE[0]:_RANGE[1]],c=to_hex(colors[i%len(channels)]),marker='o',s=2)
+
+        ax[i].set_title('Timestamp of Channel: %d'%i)
+        ax[i].tick_params(axis='both',which='both',direction='in',top=True,right=True)
+        ax[i].xaxis.set_minor_locator(AutoMinorLocator())
+        ax[i].yaxis.set_minor_locator(AutoMinorLocator())
+        ax[i].grid(axis='both', which='major', lw=0.25)
+        ax[i].grid(axis='both', which='minor', lw=0.2, ls=':')
+
+    return fig,ax
