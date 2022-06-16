@@ -1,0 +1,3270 @@
+8 3000 00
+No answer received
+FAIL
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655113341.104187 s, 2022-06-13 09:42:21 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655113344.605133 s, 2022-06-13 09:42:24 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655113404.611389 s, 2022-06-13 09:43:24 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655113409.111450 s, 2022-06-13 09:43:29 
+OK
+SE0>script delayuntil 1655115429
+OK
+SE0>rtc read
+curr rtc time 1655115429.006683 s, 2022-06-13 10:17:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655118129
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655118129.013763 s, 2022-06-13 11:02:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655118320.988220 s, 2022-06-13 11:05:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655118391.004242 s, 2022-06-13 11:06:31 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655118481.007080 s, 2022-06-13 11:08:01 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655118516.014648 s, 2022-06-13 11:08:36 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655118726.016357 s, 2022-06-13 11:12:06 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655118729.516327 s, 2022-06-13 11:12:09 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655118789.520477 s, 2022-06-13 11:13:09 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655118794.020630 s, 2022-06-13 11:13:14 
+OK
+SE0>script delayuntil 1655120829
+OK
+SE0>rtc read
+curr rtc time 1655120829.002991 s, 2022-06-13 11:47:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655123529
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655123529.007935 s, 2022-06-13 12:32:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655123723.978210 s, 2022-06-13 12:35:23 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655123796.980255 s, 2022-06-13 12:36:36 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655123886.983093 s, 2022-06-13 12:38:06 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655123921.986664 s, 2022-06-13 12:38:41 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655124134.988342 s, 2022-06-13 12:42:14 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655124138.488281 s, 2022-06-13 12:42:18 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655124201.492004 s, 2022-06-13 12:43:21 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655124205.991577 s, 2022-06-13 12:43:25 
+OK
+SE0>script delayuntil 1655126229
+OK
+SE0>rtc read
+curr rtc time 1655126229.004303 s, 2022-06-13 13:17:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655128929
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655128929.009430 s, 2022-06-13 14:02:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655129129.974152 s, 2022-06-13 14:05:29 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655129202.976227 s, 2022-06-13 14:06:42 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655129292.979156 s, 2022-06-13 14:08:12 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655129327.982758 s, 2022-06-13 14:08:47 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655129540.983276 s, 2022-06-13 14:12:20 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655129544.483398 s, 2022-06-13 14:12:24 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655129604.488800 s, 2022-06-13 14:13:24 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655129608.988647 s, 2022-06-13 14:13:28 
+OK
+SE0>script delayuntil 1655131629
+OK
+SE0>rtc read
+curr rtc time 1655131629.004547 s, 2022-06-13 14:47:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655134329
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655134329.006622 s, 2022-06-13 15:32:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655134520.974304 s, 2022-06-13 15:35:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655134590.981720 s, 2022-06-13 15:36:30 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655134680.984772 s, 2022-06-13 15:38:00 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655134715.988220 s, 2022-06-13 15:38:35 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655134928.997559 s, 2022-06-13 15:42:08 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655134932.497528 s, 2022-06-13 15:42:12 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655134992.504608 s, 2022-06-13 15:43:12 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655134997.004791 s, 2022-06-13 15:43:17 
+OK
+SE0>script delayuntil 1655137029
+OK
+SE0>rtc read
+curr rtc time 1655137029.000122 s, 2022-06-13 16:17:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655139729
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655139729.014648 s, 2022-06-13 17:02:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655139920.991302 s, 2022-06-13 17:05:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655139993.993408 s, 2022-06-13 17:06:33 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655140083.996277 s, 2022-06-13 17:08:03 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655140118.999817 s, 2022-06-13 17:08:38 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655140332.000183 s, 2022-06-13 17:12:12 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655140335.500183 s, 2022-06-13 17:12:15 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655140395.504028 s, 2022-06-13 17:13:15 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655140400.004395 s, 2022-06-13 17:13:20 
+OK
+SE0>script delayuntil 1655142429
+OK
+SE0>rtc read
+curr rtc time 1655142429.005371 s, 2022-06-13 17:47:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655145129
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655145129.006287 s, 2022-06-13 18:32:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 12 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655145326.970245 s, 2022-06-13 18:35:26 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655145399.972412 s, 2022-06-13 18:36:39 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655145489.975311 s, 2022-06-13 18:38:09 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655145524.978943 s, 2022-06-13 18:38:44 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655145734.980255 s, 2022-06-13 18:42:14 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655145738.480225 s, 2022-06-13 18:42:18 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655145798.489868 s, 2022-06-13 18:43:18 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655145802.989471 s, 2022-06-13 18:43:22 
+OK
+SE0>script delayuntil 1655147829
+OK
+SE0>rtc read
+curr rtc time 1655147829.002136 s, 2022-06-13 19:17:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655150529
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655150529.013947 s, 2022-06-13 20:02:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 12 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655150727.975433 s, 2022-06-13 20:05:27 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655150800.978424 s, 2022-06-13 20:06:40 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655150890.981293 s, 2022-06-13 20:08:10 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655150925.984863 s, 2022-06-13 20:08:45 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655151138.985229 s, 2022-06-13 20:12:18 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655151142.485168 s, 2022-06-13 20:12:22 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655151202.495239 s, 2022-06-13 20:13:22 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655151206.995483 s, 2022-06-13 20:13:26 
+OK
+SE0>script delayuntil 1655153229
+OK
+SE0>rtc read
+curr rtc time 1655153229.008759 s, 2022-06-13 20:47:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655155929
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655155929.005859 s, 2022-06-13 21:32:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655156120.969391 s, 2022-06-13 21:35:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655156190.979706 s, 2022-06-13 21:36:30 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655156280.982727 s, 2022-06-13 21:38:00 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655156315.986511 s, 2022-06-13 21:38:35 
+OK
+SE0>csp txrx 12 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655156534.984772 s, 2022-06-13 21:42:14 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655156538.484528 s, 2022-06-13 21:42:18 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655156598.488556 s, 2022-06-13 21:43:18 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655156602.988708 s, 2022-06-13 21:43:22 
+OK
+SE0>script delayuntil 1655158629
+OK
+SE0>rtc read
+curr rtc time 1655158629.005981 s, 2022-06-13 22:17:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>fs list
+ID  Name	   Status  Type     Entries	  Size
+0   fwUpdMain      OK      STATIC   1324          917 kB
+1   confMain       Locked  STATIC   3422          130 kB
+2   confMainB      Locked  STATIC   3422          130 kB
+3   confFall       Locked  STATIC   3422          130 kB
+4   confFallB      Locked  STATIC   3422          130 kB
+5   generalT       OK      LOG      9969/51471    1300 kB
+6   dataT          OK      LOG      9969/56118    13004 kB
+7   startupT       OK      LOG      45/9432       650 kB
+8   err            Empty   LOG      -             6502 kB
+9   use            OK      LOG      227/48015     6502 kB
+10  fwUpGoldenD    Locked  STATIC   1             65 kB
+11  fwUpGolden     Locked  STATIC   1324          1040 kB
+12  SE0state       OK      LOG      130/1204      130 kB
+13  SE1state       Empty   LOG      -             130 kB
+14  ScriptExe1     OK      STATIC   310           65 kB
+15  ScriptExe2     Empty   STATIC   -             65 kB
+16  ScriptExe3     Empty   STATIC   -             65 kB
+17  ScriptExe4     Empty   STATIC   -             65 kB
+18  ScriptExe5     Empty   STATIC   -             65 kB
+19  ScriptLog1     OK      LOG      485/485       130 kB
+20  ScriptLog2     Empty   LOG      -             130 kB
+21  ScriptLog3     Empty   LOG      -             130 kB
+22  ScriptLog4     Empty   LOG      -             130 kB
+23  ScriptLog5     Empty   LOG      -             130 kB
+32  OrbMonitor     OK      LOG      15649/57600   16769 kB
+33  TGFevt1        Empty   LOG      -             209612 kB
+34  TGFevt2        Empty   LOG      -             209612 kB
+35  NonVeto1       OK      LOG      217395/764160  209612 kB
+36  NonVeto2       OK      LOG      179972/764160  209612 kB
+37  Veto1          OK      LOG      111360/111360  31441 kB
+38  Veto2          OK      LOG      111360/111360  31441 kB
+39  GRBevt1        Empty   LOG      -             105854 kB
+40  GRBevt2        Empty   LOG      -             105854 kB
+OK
+SE0>rtc read
+curr rtc time 1655158694.800751 s, 2022-06-13 22:18:14 
+OK
+SE0>script delayuntil 1655166909
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655166909.013428 s, 2022-06-14 00:35:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655167106.971619 s, 2022-06-14 00:38:26 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655167179.973785 s, 2022-06-14 00:39:39 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655167269.976654 s, 2022-06-14 00:41:09 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655167304.980286 s, 2022-06-14 00:41:44 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655167514.981689 s, 2022-06-14 00:45:14 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655167518.481842 s, 2022-06-14 00:45:18 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655167578.490570 s, 2022-06-14 00:46:18 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655167582.989929 s, 2022-06-14 00:46:22 
+OK
+SE0>script delayuntil 1655169609
+OK
+SE0>rtc read
+curr rtc time 1655169609.008972 s, 2022-06-14 01:20:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655172309
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655172309.007446 s, 2022-06-14 02:05:09 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655172500.966614 s, 2022-06-14 02:08:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655172570.971100 s, 2022-06-14 02:09:30 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655172660.974213 s, 2022-06-14 02:11:00 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655172695.977844 s, 2022-06-14 02:11:35 
+OK
+SE0>csp txrx 12 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655172911.977509 s, 2022-06-14 02:15:11 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655172915.477478 s, 2022-06-14 02:15:15 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655172975.482483 s, 2022-06-14 02:16:15 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655172979.982666 s, 2022-06-14 02:16:19 
+OK
+SE0>script delayuntil 1655175009
+OK
+SE0>rtc read
+curr rtc time 1655175009.003265 s, 2022-06-14 02:50:09 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>fs list
+ID  Name	   Status  Type     Entries	  Size
+0   fwUpdMain      OK      STATIC   1324          917 kB
+1   confMain       Locked  STATIC   3422          130 kB
+2   confMainB      Locked  STATIC   3422          130 kB
+3   confFall       Locked  STATIC   3422          130 kB
+4   confFallB      Locked  STATIC   3422          130 kB
+5   generalT       OK      LOG      9996/51471    1300 kB
+6   dataT          OK      LOG      9996/56118    13004 kB
+7   startupT       OK      LOG      45/9432       650 kB
+8   err            Empty   LOG      -             6502 kB
+9   use            OK      LOG      227/48015     6502 kB
+10  fwUpGoldenD    Locked  STATIC   1             65 kB
+11  fwUpGolden     Locked  STATIC   1324          1040 kB
+12  SE0state       OK      LOG      130/1204      130 kB
+13  SE1state       Empty   LOG      -             130 kB
+14  ScriptExe1     OK      STATIC   310           65 kB
+15  ScriptExe2     Empty   STATIC   -             65 kB
+16  ScriptExe3     Empty   STATIC   -             65 kB
+17  ScriptExe4     Empty   STATIC   -             65 kB
+18  ScriptExe5     Empty   STATIC   -             65 kB
+19  ScriptLog1     OK      LOG      485/485       130 kB
+20  ScriptLog2     Empty   LOG      -             130 kB
+21  ScriptLog3     Empty   LOG      -             130 kB
+22  ScriptLog4     Empty   LOG      -             130 kB
+23  ScriptLog5     Empty   LOG      -             130 kB
+32  OrbMonitor     OK      LOG      15987/57600   16769 kB
+33  TGFevt1        Empty   LOG      -             209612 kB
+34  TGFevt2        Empty   LOG      -             209612 kB
+35  NonVeto1       OK      LOG      221336/764160  209612 kB
+36  NonVeto2       OK      LOG      183299/764160  209612 kB
+37  Veto1          OK      LOG      111360/111360  31441 kB
+38  Veto2          OK      LOG      111360/111360  31441 kB
+39  GRBevt1        Empty   LOG      -             105854 kB
+40  GRBevt2        Empty   LOG      -             105854 kB
+OK
+SE0>rtc read
+curr rtc time 1655175074.799683 s, 2022-06-14 02:51:14 
+OK
+SE0>script delayuntil 1655195888
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655195888.007477 s, 2022-06-14 08:38:08 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655196080.020264 s, 2022-06-14 08:41:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655196150.026337 s, 2022-06-14 08:42:30 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655196240.029175 s, 2022-06-14 08:44:00 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655196275.036743 s, 2022-06-14 08:44:35 
+OK
+SE0>csp txrx 12 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+No answer received
+FAIL
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655196491.617615 s, 2022-06-14 08:48:11 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655196495.117584 s, 2022-06-14 08:48:15 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655196555.130371 s, 2022-06-14 08:49:15 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655196559.636841 s, 2022-06-14 08:49:19 
+OK
+SE0>script delayuntil 1655198588
+OK
+SE0>rtc read
+curr rtc time 1655198588.007080 s, 2022-06-14 09:23:08 
+OK
+SE0>csp txrx 12 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 30000
+OK
+SE0>csp txrx 4 14 600 0008000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>csp txrx 4 14 600 000A000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 4 14 600 0007000000
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delayuntil 1655201288
+OK
+SE0>csp txrx 4 14 600 000800201C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000A00341C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 4 14 600 000700391C
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655201288.017761 s, 2022-06-14 10:08:08 
+OK
+SE0>csp txrx 4 14 600 0007010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 000A010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 1000
+OK
+SE0>csp txrx 4 14 600 0008010100
+Answer: 0000
+Bytes: 2
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 12 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>csp txrx 13 8 3000 0F
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>rtc read
+curr rtc time 1655201480.028900 s, 2022-06-14 10:11:20 
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 01
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>rtc read
+curr rtc time 1655201550.032928 s, 2022-06-14 10:12:30 
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 4 3000 02
+Answer: FE
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 60000
+OK
+SE0>rtc read
+curr rtc time 1655201640.035767 s, 2022-06-14 10:14:00 
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 12 8 3000 08
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 5000
+OK
+SE0>csp txrx 13 8 3000 01
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 20000
+OK
+SE0>rtc read
+curr rtc time 1655201675.039368 s, 2022-06-14 10:14:35 
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 12 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 8 3000 00
+Answer: FF
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 180000
+OK
+SE0>rtc read
+curr rtc time 1655201885.041016 s, 2022-06-14 10:18:05 
+OK
+SE0>script delay 3500
+OK
+SE0>rtc read
+curr rtc time 1655201888.541168 s, 2022-06-14 10:18:08 
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 40000
+OK
+SE0>csp txrx 12 9 3000 00000009400F001690010016
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>script delay 10000
+OK
+SE0>csp txrx 13 9 3000 0F0F0F09B80B041008076810
+Answer: 00
+Bytes: 1
+Flags: 0x00 (frag=0, HMAC=0, XTEA=0, RDP=0, CRC32=0)
+OK
+SE0>rtc read
+curr rtc time 1655201948.549988 s, 2022-06-14 10:19:08 
+OK
+SE0>script delay 4500
+OK
+SE0>rtc read
+curr rtc time 1655201953.049255 s, 2022-0

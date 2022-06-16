@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="raadpy-nyuad-po524",
+    name="raadpy",
     version="0.0.1",
     author="NYUAD Astroparticle Lab (Panos Oikonomou)",
     author_email="po524@nyu.edu",
