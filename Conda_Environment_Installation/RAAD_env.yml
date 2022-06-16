@@ -21,4 +21,5 @@ dependencies:
   - conda-build=3.21.9
   - ipywidgets=7.7.0
   - ipympl=0.9.1
+  - plotly=5.8.2
 prefix: /home/nyuad/miniconda3/envs/RAAD
