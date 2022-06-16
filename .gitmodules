@@ -1,0 +1,3 @@
+[submodule "raadpy"]
+	path = raadpy
+	url = git@github.com:nyuad-astroparticle/raadpy.git
