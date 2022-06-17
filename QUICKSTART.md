@@ -53,6 +53,13 @@ If you want to download the latest update to the code, or the `main` branch is n
 $ git pull
 ```
 
+> **_NOTE:_** In case you try to ``git pull`` and git doesn't let you, fear not! This is probably because you have made changes locally but didn't commit them and git doesn't want to override them. In such a case you have two options: 
+> 1. Tell git not to care by running
+> ```shell
+> git stash
+> ```
+> 2. Commit the changes as shown below
+
 Finally, to create a commit you first have to `git add` the files you have changed or created, then `git commit` them and finally, `git push` the changes to update the online version of the repository. To do this, type:
 
 ```shell
