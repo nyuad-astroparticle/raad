@@ -10,7 +10,6 @@ dependencies:
   - astropy=5.0.2
   - requests=2.27.1
   - lxml=4.8.0
-  - fitsio=1.1.7
   - bokeh=2.4.2
   - pandas=1.4.1
   - folium=0.12.1.post1
