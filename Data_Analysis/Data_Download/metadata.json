@@ -1,0 +1,23 @@
+{
+    "start_time": null,
+    "end_time": null,
+    "hv_SiPM": -1,
+    "hv_PMT": -1,
+    "hv_veto_SiPM": -1,
+    "hv_veto_PMT": -1,
+    "thresholds_SiPM": {
+        "channel_0": 0,
+        "channel_1": 0,
+        "channel_2": 0,
+        "channel_3": 0
+    },
+    "thresholds_PMT": {
+        "channel_0": 0,
+        "channel_1": 0,
+        "channel_2": 0,
+        "channel_3": 0
+    },
+    "custom_scenario_PMT": -1,
+    "custom_scenario_SiPM": -1,
+    "file_version": 24
+}
