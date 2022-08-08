@@ -1,765 +1,1080 @@
 status,time,description,ID_in_Graph
-1,1657859400.0,"('delay until ', 1657859400.0)",SE0>script delayuntil 1657859400,
-1,1657859400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657859400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657859400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657859400.01059,read the current time ,1657859400.01059,
-1,1657859400.01059,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657859401.01059,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657859401.01059,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657859402.01059,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657859402.01059,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657859582.01059,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657859582.01059,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657859582.01059,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657859582.01059,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657859582.01059,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657859592.01059,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859592.033844,read the current time ,1657859592.033844,
-1,1657859592.033844,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657859602.033844,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859602.033844,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657859612.033844,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859612.033844,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657859622.033844,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859622.033844,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657859662.033844,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657859661.980255,read the current time ,1657859661.980255,
-1,1657859661.980255,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657859671.980255,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859671.980255,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657859681.980255,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859681.980255,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657859691.980255,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859691.980255,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657859751.980255,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657859751.984924,read the current time ,1657859751.984924,
-1,1657859751.984924,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657859752.984924,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657859752.984924,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657859753.984924,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657859753.984924,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657859754.984924,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657859754.984924,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657859814.984924,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657859814.98941,read the current time ,1657859814.98941,
-1,1657859814.98941,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657859824.98941,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657859827.98941,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657859837.98941,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859837.98941,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657859847.98941,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859847.98941,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657859907.98941,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657859907.993195,read the current time ,1657859907.993195,
-1,1657859911.493195,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657859911.493225,read the current time ,1657859911.493225,
-1,1657859911.493225,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657859921.493225,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859921.493225,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657859961.493225,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657859961.493225,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657859971.493225,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657859971.493225,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657859971.499481,read the current time ,1657859971.499481,
-1,1657859975.999481,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657859975.999725,read the current time ,1657859975.999725,
-1,1657862100.0,"('delay until ', 1657862100.0)",SE0>script delayuntil 1657862100,
-1,1657862100.003204,read the current time ,1657862100.003204,
--1,1657862103.003204,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657862113.003204,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657862113.003204,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657862143.003204,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657862143.003204,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657862163.003204,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657862163.003204,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657862168.003204,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657862168.003204,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657864800.0,"('delay until ', 1657864800.0)",SE0>script delayuntil 1657864800,
-1,1657864800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657864800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657864800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657864800.011169,read the current time ,1657864800.011169,
-1,1657864800.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657864801.011169,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657864801.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657864802.011169,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657864802.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657864982.011169,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657864982.011169,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657864982.011169,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657864982.011169,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657864982.011169,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657864992.011169,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657864992.021881,read the current time ,1657864992.021881,
-1,1657864992.021881,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657865002.021881,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657865005.021881,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657865015.021881,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865015.021881,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657865025.021881,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865025.021881,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657865065.021881,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657865064.967133,read the current time ,1657865064.967133,
-1,1657865064.967133,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657865074.967133,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865074.967133,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657865084.967133,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865084.967133,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657865094.967133,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865094.967133,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657865154.967133,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657865154.972076,read the current time ,1657865154.972076,
-1,1657865154.972076,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657865155.972076,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657865155.972076,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657865156.972076,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657865156.972076,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657865157.972076,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657865157.972076,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657865217.972076,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657865217.976837,read the current time ,1657865217.976837,
-1,1657865217.976837,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657865227.976837,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657865230.976837,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657865240.976837,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865240.976837,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657865250.976837,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865250.976837,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657865310.976837,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657865310.986694,read the current time ,1657865310.986694,
-1,1657865314.486694,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657865314.486542,read the current time ,1657865314.486542,
-1,1657865314.486542,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657865324.486542,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865324.486542,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657865364.486542,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657865367.486542,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657865377.486542,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657865377.486542,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657865377.490936,read the current time ,1657865377.490936,
-1,1657865381.990936,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657865381.991394,read the current time ,1657865381.991394,
-1,1657867500.0,"('delay until ', 1657867500.0)",SE0>script delayuntil 1657867500,
-1,1657867500.009186,read the current time ,1657867500.009186,
--1,1657867503.009186,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657867513.009186,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657867513.009186,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657867543.009186,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657867543.009186,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657867563.009186,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657867563.009186,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657867568.009186,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657867568.009186,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657870200.0,"('delay until ', 1657870200.0)",SE0>script delayuntil 1657870200,
-1,1657870200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657870200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657870200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657870200.013245,read the current time ,1657870200.013245,
-1,1657870200.013245,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657870201.013245,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657870201.013245,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657870202.013245,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657870202.013245,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657870382.013245,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657870382.013245,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657870385.013245,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657870385.013245,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657870388.013245,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657870398.013245,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870397.96347,read the current time ,1657870397.96347,
-1,1657870397.96347,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657870407.96347,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657870410.96347,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657870420.96347,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870420.96347,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657870430.96347,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870430.96347,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657870470.96347,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657870470.96817,read the current time ,1657870470.96817,
-1,1657870470.96817,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657870480.96817,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870480.96817,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657870490.96817,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870490.96817,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657870500.96817,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870500.96817,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657870560.96817,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657870560.973053,read the current time ,1657870560.973053,
-1,1657870560.973053,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657870561.973053,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657870561.973053,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657870562.973053,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657870562.973053,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657870563.973053,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657870563.973053,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657870623.973053,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657870623.977753,read the current time ,1657870623.977753,
-1,1657870623.977753,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657870633.977753,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870633.977753,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657870643.977753,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870643.977753,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657870653.977753,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870653.977753,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657870713.977753,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657870713.985504,read the current time ,1657870713.985504,
-1,1657870717.485504,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657870717.485535,read the current time ,1657870717.485535,
-1,1657870717.485535,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657870727.485535,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870727.485535,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657870767.485535,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657870770.485535,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657870780.485535,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657870780.485535,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657870780.489716,read the current time ,1657870780.489716,
-1,1657870784.989716,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657870784.990173,read the current time ,1657870784.990173,
-1,1657872900.0,"('delay until ', 1657872900.0)",SE0>script delayuntil 1657872900,
-1,1657872900.002716,read the current time ,1657872900.002716,
-1,1657872900.002716,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657872910.002716,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657872910.002716,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657872940.002716,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657872940.002716,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657872960.002716,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657872960.002716,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657872965.002716,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657872965.002716,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657875600.0,"('delay until ', 1657875600.0)",SE0>script delayuntil 1657875600,
-1,1657875600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657875600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657875600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657875600.009644,read the current time ,1657875600.009644,
-1,1657875600.009644,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657875601.009644,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657875601.009644,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657875602.009644,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657875602.009644,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657875782.009644,"('delay of ', 180.0)",SE0>script delay 180000,
--1,1657875785.009644,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657875785.009644,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
--1,1657875788.009644,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657875791.009644,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657875801.009644,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875800.964508,read the current time ,1657875800.964508,
-1,1657875800.964508,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657875810.964508,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875810.964508,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657875820.964508,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875820.964508,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657875830.964508,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875830.964508,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657875870.964508,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657875870.969177,read the current time ,1657875870.969177,
-1,1657875870.969177,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657875880.969177,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875880.969177,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657875890.969177,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875890.969177,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657875900.969177,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657875900.969177,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657875960.969177,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657875960.97403,read the current time ,1657875960.97403,
-1,1657875960.97403,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657875961.97403,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657875961.97403,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657875962.97403,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657875962.97403,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657875963.97403,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657875963.97403,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657876023.97403,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657876023.978699,read the current time ,1657876023.978699,
--1,1657876026.978699,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657876036.978699,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657876039.978699,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657876049.978699,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657876049.978699,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657876059.978699,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657876059.978699,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657876119.978699,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657876119.982483,read the current time ,1657876119.982483,
-1,1657876123.482483,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657876123.482513,read the current time ,1657876123.482513,
-1,1657876123.482513,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657876133.482513,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657876133.482513,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657876173.482513,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657876176.482513,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657876186.482513,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657876189.482513,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657876189.491364,read the current time ,1657876189.491364,
-1,1657876193.991364,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657876193.991211,read the current time ,1657876193.991211,
-1,1657878300.0,"('delay until ', 1657878300.0)",SE0>script delayuntil 1657878300,
-1,1657878300.003235,read the current time ,1657878300.003235,
--1,1657878303.003235,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657878313.003235,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657878313.003235,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657878343.003235,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657878343.003235,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657878363.003235,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657878363.003235,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657878368.003235,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657878368.003235,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657881000.0,"('delay until ', 1657881000.0)",SE0>script delayuntil 1657881000,
-1,1657881000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657881000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657881000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657881000.00827,read the current time ,1657881000.00827,
-1,1657881000.00827,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657881001.00827,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657881001.00827,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657881002.00827,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657881002.00827,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657881182.00827,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657881182.00827,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657881185.00827,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657881185.00827,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657881188.00827,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657881198.00827,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881198.028595,read the current time ,1657881198.028595,
-1,1657881198.028595,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657881208.028595,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881208.028595,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657881218.028595,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881218.028595,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657881228.028595,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881228.028595,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657881268.028595,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657881267.975098,read the current time ,1657881267.975098,
-1,1657881267.975098,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657881277.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881277.975098,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657881287.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881287.975098,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657881297.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881297.975098,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657881357.975098,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657881357.979889,read the current time ,1657881357.979889,
-1,1657881357.979889,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657881358.979889,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657881358.979889,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657881359.979889,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657881359.979889,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657881360.979889,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657881360.979889,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657881420.979889,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657881420.984467,read the current time ,1657881420.984467,
-1,1657881420.984467,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657881430.984467,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881430.984467,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657881440.984467,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881440.984467,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657881450.984467,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881450.984467,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657881510.984467,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657881510.990265,read the current time ,1657881510.990265,
-1,1657881514.490265,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657881514.490326,read the current time ,1657881514.490326,
-1,1657881514.490326,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657881524.490326,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881524.490326,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657881564.490326,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657881567.490326,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657881577.490326,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657881577.490326,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657881577.496674,read the current time ,1657881577.496674,
-1,1657881581.996674,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657881581.996918,read the current time ,1657881581.996918,
-1,1657883700.0,"('delay until ', 1657883700.0)",SE0>script delayuntil 1657883700,
-1,1657883700.000916,read the current time ,1657883700.000916,
-1,1657883700.000916,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657883710.000916,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657883713.000916,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657883743.000916,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657883743.000916,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657883763.000916,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657883763.000916,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657883768.000916,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657883768.000916,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657886400.0,"('delay until ', 1657886400.0)",SE0>script delayuntil 1657886400,
-1,1657886400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657886400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657886400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657886400.012939,read the current time ,1657886400.012939,
-1,1657886400.012939,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657886401.012939,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657886401.012939,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657886402.012939,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657886402.012939,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657886582.012939,"('delay of ', 180.0)",SE0>script delay 180000,
--1,1657886585.012939,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657886588.012939,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657886588.012939,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657886588.012939,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657886598.012939,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886598.021942,read the current time ,1657886598.021942,
-1,1657886598.021942,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657886608.021942,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886608.021942,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657886618.021942,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886618.021942,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657886628.021942,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886628.021942,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657886668.021942,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657886667.969055,read the current time ,1657886667.969055,
-1,1657886667.969055,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657886677.969055,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886677.969055,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657886687.969055,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886687.969055,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657886697.969055,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886697.969055,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657886757.969055,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657886757.97406,read the current time ,1657886757.97406,
-1,1657886757.97406,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657886758.97406,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657886758.97406,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657886759.97406,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657886759.97406,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657886760.97406,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657886760.97406,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657886820.97406,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657886820.978668,read the current time ,1657886820.978668,
-1,1657886820.978668,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657886830.978668,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886830.978668,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657886840.978668,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886840.978668,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657886850.978668,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886850.978668,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657886910.978668,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657886910.983246,read the current time ,1657886910.983246,
-1,1657886914.483246,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657886914.483307,read the current time ,1657886914.483307,
-1,1657886914.483307,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657886924.483307,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886924.483307,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657886964.483307,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657886964.483307,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657886974.483307,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657886974.483307,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657886974.48941,read the current time ,1657886974.48941,
-1,1657886978.98941,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657886978.988892,read the current time ,1657886978.988892,
-1,1657889100.0,"('delay until ', 1657889100.0)",SE0>script delayuntil 1657889100,
-1,1657889100.007812,read the current time ,1657889100.007812,
-1,1657889100.007812,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657889110.007812,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657889110.007812,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657889140.007812,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657889140.007812,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657889160.007812,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657889160.007812,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657889165.007812,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657889165.007812,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657891800.0,"('delay until ', 1657891800.0)",SE0>script delayuntil 1657891800,
-1,1657891800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657891800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657891800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657891800.009888,read the current time ,1657891800.009888,
-1,1657891800.009888,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657891801.009888,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657891801.009888,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657891802.009888,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657891802.009888,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657891982.009888,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657891982.009888,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657891982.009888,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657891982.009888,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657891982.009888,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657891992.009888,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657891992.026031,read the current time ,1657891992.026031,
-1,1657891992.026031,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657892002.026031,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892002.026031,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657892012.026031,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892012.026031,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657892022.026031,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892022.026031,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657892062.026031,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657892061.973022,read the current time ,1657892061.973022,
-1,1657892061.973022,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657892071.973022,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892071.973022,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657892081.973022,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892081.973022,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657892091.973022,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892091.973022,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657892151.973022,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657892151.977814,read the current time ,1657892151.977814,
-1,1657892151.977814,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657892152.977814,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657892152.977814,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657892153.977814,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657892153.977814,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657892154.977814,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657892154.977814,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657892214.977814,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657892214.982361,read the current time ,1657892214.982361,
--1,1657892217.982361,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657892227.982361,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892227.982361,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657892237.982361,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892237.982361,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657892247.982361,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892247.982361,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657892307.982361,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657892307.986206,read the current time ,1657892307.986206,
-1,1657892311.486206,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657892311.486267,read the current time ,1657892311.486267,
-1,1657892311.486267,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657892321.486267,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892321.486267,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657892361.486267,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657892364.486267,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657892374.486267,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657892374.486267,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657892374.491699,read the current time ,1657892374.491699,
-1,1657892378.991699,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657892378.992859,read the current time ,1657892378.992859,
-1,1657894500.0,"('delay until ', 1657894500.0)",SE0>script delayuntil 1657894500,
-1,1657894500.00647,read the current time ,1657894500.00647,
--1,1657894503.00647,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657894513.00647,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657894513.00647,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657894543.00647,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657894543.00647,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657894563.00647,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657894563.00647,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657894568.00647,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657894568.00647,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657897200.0,"('delay until ', 1657897200.0)",SE0>script delayuntil 1657897200,
-1,1657897200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657897200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657897200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657897200.013458,read the current time ,1657897200.013458,
-1,1657897200.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657897201.013458,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657897201.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657897202.013458,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657897202.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657897382.013458,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657897382.013458,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657897385.013458,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657897385.013458,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
--1,1657897388.013458,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657897398.013458,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897398.020782,read the current time ,1657897398.020782,
-1,1657897398.020782,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657897408.020782,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897408.020782,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657897418.020782,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897418.020782,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657897428.020782,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897428.020782,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657897468.020782,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657897467.968048,read the current time ,1657897467.968048,
-1,1657897467.968048,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657897477.968048,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897477.968048,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657897487.968048,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897487.968048,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657897497.968048,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897497.968048,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657897557.968048,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657897557.972809,read the current time ,1657897557.972809,
-1,1657897557.972809,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657897558.972809,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657897558.972809,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657897559.972809,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657897559.972809,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657897560.972809,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657897560.972809,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657897620.972809,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657897620.978394,read the current time ,1657897620.978394,
-1,1657897620.978394,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657897630.978394,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657897633.978394,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657897643.978394,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897643.978394,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657897653.978394,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897653.978394,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657897713.978394,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657897713.982178,read the current time ,1657897713.982178,
-1,1657897717.482178,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657897717.482208,read the current time ,1657897717.482208,
-1,1657897717.482208,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657897727.482208,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897727.482208,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657897767.482208,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657897767.482208,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657897777.482208,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657897777.482208,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657897777.488342,read the current time ,1657897777.488342,
-1,1657897781.988342,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657897781.99176,read the current time ,1657897781.99176,
-1,1657899900.0,"('delay until ', 1657899900.0)",SE0>script delayuntil 1657899900,
-1,1657899900.004608,read the current time ,1657899900.004608,
--1,1657899903.004608,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657899913.004608,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657899916.004608,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657899946.004608,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657899946.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657899966.004608,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657899966.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657899971.004608,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657899971.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657902600.0,"('delay until ', 1657902600.0)",SE0>script delayuntil 1657902600,
-1,1657902600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657902600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657902600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657902600.017914,read the current time ,1657902600.017914,
-1,1657902600.017914,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657902601.017914,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657902601.017914,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657902602.017914,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657902602.017914,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657902782.017914,"('delay of ', 180.0)",SE0>script delay 180000,
--1,1657902785.017914,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657902785.017914,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657902785.017914,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657902785.017914,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657902795.017914,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902795.028809,read the current time ,1657902795.028809,
-1,1657902795.028809,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657902805.028809,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657902808.028809,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657902818.028809,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902818.028809,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657902828.028809,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902828.028809,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657902868.028809,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657902867.975098,read the current time ,1657902867.975098,
-1,1657902867.975098,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657902877.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902877.975098,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657902887.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902887.975098,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657902897.975098,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657902897.975098,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657902957.975098,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657902957.97995,read the current time ,1657902957.97995,
-1,1657902957.97995,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657902958.97995,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657902958.97995,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657902959.97995,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657902959.97995,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657902960.97995,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657902960.97995,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657903020.97995,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657903020.984528,read the current time ,1657903020.984528,
-1,1657903020.984528,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657903030.984528,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657903033.984528,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657903043.984528,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657903043.984528,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657903053.984528,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657903053.984528,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657903113.984528,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657903113.988373,read the current time ,1657903113.988373,
-1,1657903117.488373,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657903117.488403,read the current time ,1657903117.488403,
-1,1657903117.488403,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657903127.488403,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657903127.488403,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657903167.488403,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657903170.488403,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657903180.488403,"('delay of ', 10.0)",SE0>script delay 10000,
--1,1657903183.488403,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657903183.494019,read the current time ,1657903183.494019,
-1,1657903187.994019,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657903187.994049,read the current time ,1657903187.994049,
-1,1657905300.0,"('delay until ', 1657905300.0)",SE0>script delayuntil 1657905300,
-1,1657905300.006226,read the current time ,1657905300.006226,
-1,1657905300.006226,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657905310.006226,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657905310.006226,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657905340.006226,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657905340.006226,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657905360.006226,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657905360.006226,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657905365.006226,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657905365.006226,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657908000.0,"('delay until ', 1657908000.0)",SE0>script delayuntil 1657908000,
-1,1657908000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
-1,1657908000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
-1,1657908000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
-1,1657908000.013458,read the current time ,1657908000.013458,
-1,1657908000.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
-1,1657908001.013458,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657908001.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
-1,1657908002.013458,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657908002.013458,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
-1,1657908182.013458,"('delay of ', 180.0)",SE0>script delay 180000,
-1,1657908182.013458,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657908182.013458,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657908182.013458,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
-1,1657908182.013458,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
-1,1657908192.013458,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908192.025879,read the current time ,1657908192.025879,
-1,1657908192.025879,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657908202.025879,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908202.025879,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657908212.025879,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908212.025879,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
-1,1657908222.025879,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908222.025879,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
-1,1657908262.025879,"('delay of ', 40.0)",SE0>script delay 40000,
-1,1657908261.983063,read the current time ,1657908261.983063,
-1,1657908261.983063,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657908271.983063,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908271.983063,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657908281.983063,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908281.983063,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
-1,1657908291.983063,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908291.983063,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
-1,1657908351.983063,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657908351.988129,read the current time ,1657908351.988129,
-1,1657908351.988129,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657908352.988129,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657908352.988129,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657908353.988129,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657908353.988129,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
-1,1657908354.988129,"('delay of ', 1.0)",SE0>script delay 1000,
-1,1657908354.988129,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
-1,1657908414.988129,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657908414.992676,read the current time ,1657908414.992676,
-1,1657908414.992676,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657908424.992676,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908424.992676,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657908434.992676,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908434.992676,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
-1,1657908444.992676,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908444.992676,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
-1,1657908504.992676,"('delay of ', 60.0)",SE0>script delay 60000,
-1,1657908504.997345,read the current time ,1657908504.997345,
-1,1657908508.497345,"('delay of ', 3.5)",SE0>script delay 3500,
-1,1657908508.497375,read the current time ,1657908508.497375,
-1,1657908508.497375,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657908518.497375,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908518.497375,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657908558.497375,"('delay of ', 40.0)",SE0>script delay 40000,
--1,1657908561.497375,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 000000094004400460014004')"
-1,1657908571.497375,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657908571.497375,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00096006600660066006')"
-1,1657908571.502777,read the current time ,1657908571.502777,
-1,1657908576.002777,"('delay of ', 4.5)",SE0>script delay 4500,
-1,1657908576.003052,read the current time ,1657908576.003052,
-1,1657910700.0,"('delay until ', 1657910700.0)",SE0>script delayuntil 1657910700,
-1,1657910700.00354,read the current time ,1657910700.00354,
-1,1657910700.00354,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
-1,1657910710.00354,"('delay of ', 10.0)",SE0>script delay 10000,
-1,1657910710.00354,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
-1,1657910740.00354,"('delay of ', 30.0)",SE0>script delay 30000,
-1,1657910740.00354,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
-1,1657910760.00354,"('delay of ', 20.0)",SE0>script delay 20000,
-1,1657910760.00354,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
-1,1657910765.00354,"('delay of ', 5.0)",SE0>script delay 5000,
-1,1657910765.00354,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
-1,1657913400.0,"('delay until ', 1657913400.0)",SE0>script delayuntil 1657913400,
-1,1657913400.0,unidentified command ,SE0># End Of Script 15 Jul 2022 19:30:30,
-1,1657913400.0,-1,17,LOG END
-1,1657913400.0,-1,17,LOG END
+1,1659552300.008179,read the current time ,1659552300.008179,
+-1,1659552303.008179,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659552313.008179,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659552316.008179,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659552346.008179,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659552346.008179,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659552366.008179,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659552366.008179,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659552371.008179,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659552371.008179,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659555000.0,"('delay until ', 1659555000.0)",SE0>script delayuntil 1659555000,
+1,1659555000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659555000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659555000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659555000.015625,read the current time ,1659555000.015625,
+1,1659555000.015625,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659555001.015625,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659555001.015625,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659555002.015625,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659555002.015625,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659555182.015625,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659555182.015625,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659555182.015625,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659555182.015625,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659555182.015625,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659555192.015625,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555192.021179,read the current time ,1659555192.021179,
+1,1659555192.021179,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659555202.021179,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659555205.021179,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659555215.021179,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555215.021179,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659555225.021179,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555225.021179,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659555265.021179,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659555265.027527,read the current time ,1659555265.027527,
+1,1659555265.027527,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659555275.027527,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555275.027527,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659555285.027527,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555285.027527,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659555295.027527,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555295.027527,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659555355.027527,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659555355.034821,read the current time ,1659555355.034821,
+1,1659555355.034821,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659555356.034821,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659555356.034821,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659555357.034821,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659555357.034821,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659555358.034821,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659555358.034821,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659555418.034821,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659555418.038147,read the current time ,1659555418.038147,
+1,1659555418.038147,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659555428.038147,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659555431.038147,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659555441.038147,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555441.038147,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659555451.038147,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659555454.038147,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659555514.038147,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659555514.039093,read the current time ,1659555514.039093,
+1,1659555517.539093,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659555517.539062,read the current time ,1659555517.539062,
+1,1659555517.539062,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B000B0804080408040804')"
+1,1659555527.539062,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555527.539062,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F000B0804080408040804')"
+1,1659555567.539062,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659555567.539062,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B000B0804080408040804')"
+1,1659555577.539062,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659555577.539062,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F000B0804080408040804')"
+1,1659555577.544098,read the current time ,1659555577.544098,
+1,1659555582.044098,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659555582.04834,read the current time ,1659555582.04834,
+1,1659557700.0,"('delay until ', 1659557700.0)",SE0>script delayuntil 1659557700,
+1,1659557700.00415,read the current time ,1659557700.00415,
+1,1659557700.00415,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659557710.00415,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659557710.00415,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659557740.00415,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659557740.00415,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659557760.00415,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659557760.00415,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659557765.00415,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659557765.00415,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659560400.0,"('delay until ', 1659560400.0)",SE0>script delayuntil 1659560400,
+1,1659560400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659560400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659560400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659560400.013428,read the current time ,1659560400.013428,
+1,1659560400.013428,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659560401.013428,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659560401.013428,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659560402.013428,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659560402.013428,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659560582.013428,"('delay of ', 180.0)",SE0>script delay 180000,
+-1,1659560585.013428,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659560585.013428,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659560585.013428,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659560585.013428,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659560595.013428,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560595.019409,read the current time ,1659560595.019409,
+1,1659560595.019409,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659560605.019409,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560605.019409,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659560615.019409,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560615.019409,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659560625.019409,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560625.019409,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659560665.019409,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659560665.0224,read the current time ,1659560665.0224,
+1,1659560665.0224,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659560675.0224,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560675.0224,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659560685.0224,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560685.0224,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659560695.0224,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560695.0224,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659560755.0224,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659560755.025208,read the current time ,1659560755.025208,
+1,1659560755.025208,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659560756.025208,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659560756.025208,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659560757.025208,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659560757.025208,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659560758.025208,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659560758.025208,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659560818.025208,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659560818.028503,read the current time ,1659560818.028503,
+1,1659560818.028503,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659560828.028503,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560828.028503,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659560838.028503,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560838.028503,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659560848.028503,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560848.028503,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659560908.028503,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659560908.031586,read the current time ,1659560908.031586,
+1,1659560911.531586,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659560911.531555,read the current time ,1659560911.531555,
+1,1659560911.531555,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B000B0804080408040804')"
+1,1659560921.531555,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560921.531555,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F000B0804080408040804')"
+1,1659560961.531555,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659560961.531555,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B000B0804080408040804')"
+1,1659560971.531555,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659560971.531555,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F000B0804080408040804')"
+1,1659560971.537872,read the current time ,1659560971.537872,
+1,1659560976.037872,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659560976.037811,read the current time ,1659560976.037811,
+1,1659563100.0,"('delay until ', 1659563100.0)",SE0>script delayuntil 1659563100,
+1,1659563100.004486,read the current time ,1659563100.004486,
+1,1659563100.004486,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659563110.004486,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659563110.004486,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659563140.004486,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659563140.004486,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659563160.004486,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659563160.004486,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659563165.004486,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659563165.004486,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659563165.004486,unidentified command ,SE0>fs list,
+1,1659563165.004486,unidentified command ,SE0># End Of Script 3 Aug 2022 23:59:59,
+1,1659563165.004486,unidentified command ,SE0># Start Of Script 4 August 2022 0:00:00,
+1,1659563166.074432,read the current time ,1659563166.074432,
+1,1659571200.0,"('delay until ', 1659571200.0)",SE0>script delayuntil 1659571200,
+1,1659571200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659571200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659571200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659571200.009216,read the current time ,1659571200.009216,
+1,1659571200.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659571201.009216,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659571201.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659571202.009216,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659571202.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659571382.009216,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659571382.009216,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659571382.009216,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659571382.009216,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659571382.009216,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659571392.009216,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571392.016602,read the current time ,1659571392.016602,
+1,1659571392.016602,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659571402.016602,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659571405.016602,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659571415.016602,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571415.016602,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659571425.016602,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571425.016602,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659571465.016602,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659571465.018738,read the current time ,1659571465.018738,
+1,1659571465.018738,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659571475.018738,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571475.018738,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659571485.018738,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571485.018738,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659571495.018738,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571495.018738,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659571555.018738,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659571555.02182,read the current time ,1659571555.02182,
+1,1659571555.02182,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659571556.02182,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659571556.02182,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659571557.02182,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659571557.02182,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659571558.02182,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659571558.02182,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659571618.02182,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659571618.026276,read the current time ,1659571618.026276,
+1,1659571618.026276,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659571628.026276,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659571631.026276,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659571641.026276,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571641.026276,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659571651.026276,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571651.026276,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659571711.026276,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659571711.028137,read the current time ,1659571711.028137,
+1,1659571714.528137,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659571714.528046,read the current time ,1659571714.528046,
+1,1659571714.528046,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659571724.528046,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571724.528046,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659571764.528046,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659571764.528046,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659571774.528046,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659571774.528046,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659571774.532837,read the current time ,1659571774.532837,
+1,1659571779.032837,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659571779.033203,read the current time ,1659571779.033203,
+1,1659573900.0,"('delay until ', 1659573900.0)",SE0>script delayuntil 1659573900,
+1,1659573900.003937,read the current time ,1659573900.003937,
+1,1659573900.003937,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659573910.003937,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659573910.003937,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659573940.003937,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659573940.003937,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659573960.003937,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659573960.003937,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659573965.003937,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659573965.003937,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659576600.0,"('delay until ', 1659576600.0)",SE0>script delayuntil 1659576600,
+1,1659576600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659576600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659576600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659576600.016266,read the current time ,1659576600.016266,
+1,1659576600.016266,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659576601.016266,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659576601.016266,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659576602.016266,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659576602.016266,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659576782.016266,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659576782.016266,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659576782.016266,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+-1,1659576785.016266,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659576785.016266,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659576795.016266,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576795.035065,read the current time ,1659576795.035065,
+1,1659576795.035065,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659576805.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659576808.035065,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659576818.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576818.035065,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659576828.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576828.035065,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659576868.035065,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659576868.037384,read the current time ,1659576868.037384,
+1,1659576868.037384,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659576878.037384,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576878.037384,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659576888.037384,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576888.037384,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659576898.037384,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659576898.037384,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659576958.037384,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659576958.040588,read the current time ,1659576958.040588,
+1,1659576958.040588,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659576959.040588,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659576959.040588,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659576960.040588,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659576960.040588,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659576961.040588,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659576961.040588,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659577021.040588,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659577021.043671,read the current time ,1659577021.043671,
+1,1659577021.043671,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659577031.043671,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659577031.043671,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659577041.043671,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659577041.043671,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659577051.043671,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659577051.043671,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659577111.043671,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659577111.046387,read the current time ,1659577111.046387,
+1,1659577114.546387,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659577114.546326,read the current time ,1659577114.546326,
+1,1659577114.546326,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659577124.546326,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659577124.546326,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659577164.546326,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659577164.546326,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659577174.546326,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659577174.546326,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659577174.559174,read the current time ,1659577174.559174,
+1,1659577179.059174,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659577179.059509,read the current time ,1659577179.059509,
+1,1659579300.0,"('delay until ', 1659579300.0)",SE0>script delayuntil 1659579300,
+1,1659579300.000092,read the current time ,1659579300.000092,
+1,1659579300.000092,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659579310.000092,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659579310.000092,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659579340.000092,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659579340.000092,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659579360.000092,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659579360.000092,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659579365.000092,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659579365.000092,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659582000.0,"('delay until ', 1659582000.0)",SE0>script delayuntil 1659582000,
+1,1659582000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659582000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659582000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659582000.00946,read the current time ,1659582000.00946,
+1,1659582000.00946,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659582001.00946,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659582001.00946,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659582002.00946,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659582002.00946,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659582182.00946,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659582182.00946,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+-1,1659582185.00946,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+-1,1659582188.00946,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659582188.00946,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659582198.00946,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582198.015442,read the current time ,1659582198.015442,
+1,1659582198.015442,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659582208.015442,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659582211.015442,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659582221.015442,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582221.015442,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659582231.015442,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582231.015442,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659582271.015442,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659582271.017395,read the current time ,1659582271.017395,
+1,1659582271.017395,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659582281.017395,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582281.017395,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659582291.017395,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582291.017395,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659582301.017395,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582301.017395,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659582361.017395,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659582361.019989,read the current time ,1659582361.019989,
+1,1659582361.019989,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659582362.019989,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659582362.019989,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659582363.019989,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659582363.019989,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659582364.019989,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659582364.019989,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659582424.019989,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659582424.023071,read the current time ,1659582424.023071,
+1,1659582424.023071,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659582434.023071,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582434.023071,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659582444.023071,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582444.023071,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659582454.023071,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582454.023071,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659582514.023071,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659582514.026886,read the current time ,1659582514.026886,
+1,1659582517.526886,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659582517.526825,read the current time ,1659582517.526825,
+1,1659582517.526825,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659582527.526825,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659582527.526825,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659582567.526825,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659582567.526825,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659582577.526825,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659582580.526825,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659582580.535095,read the current time ,1659582580.535095,
+1,1659582585.035095,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659582585.035065,read the current time ,1659582585.035065,
+1,1659584700.0,"('delay until ', 1659584700.0)",SE0>script delayuntil 1659584700,
+1,1659584700.003998,read the current time ,1659584700.003998,
+1,1659584700.003998,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659584710.003998,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659584713.003998,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659584743.003998,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659584743.003998,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659584763.003998,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659584763.003998,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659584768.003998,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659584768.003998,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659587400.0,"('delay until ', 1659587400.0)",SE0>script delayuntil 1659587400,
+1,1659587400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659587400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659587400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659587400.007446,read the current time ,1659587400.007446,
+1,1659587400.007446,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659587401.007446,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659587401.007446,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659587402.007446,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659587402.007446,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659587582.007446,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659587582.007446,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659587582.007446,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659587582.007446,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659587582.007446,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659587592.007446,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587592.014526,read the current time ,1659587592.014526,
+1,1659587592.014526,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659587602.014526,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659587605.014526,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659587615.014526,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587615.014526,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659587625.014526,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587625.014526,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659587665.014526,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659587665.01651,read the current time ,1659587665.01651,
+1,1659587665.01651,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659587675.01651,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587675.01651,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659587685.01651,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587685.01651,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659587695.01651,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587695.01651,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659587755.01651,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659587755.019257,read the current time ,1659587755.019257,
+1,1659587755.019257,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659587756.019257,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659587756.019257,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659587757.019257,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659587757.019257,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659587758.019257,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659587758.019257,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659587818.019257,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659587818.022522,read the current time ,1659587818.022522,
+1,1659587818.022522,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659587828.022522,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587828.022522,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659587838.022522,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587838.022522,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659587848.022522,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587848.022522,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659587908.022522,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659587908.027283,read the current time ,1659587908.027283,
+1,1659587911.527283,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659587911.527039,read the current time ,1659587911.527039,
+1,1659587911.527039,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659587921.527039,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587921.527039,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659587961.527039,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659587961.527039,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659587971.527039,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659587971.527039,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659587971.531036,read the current time ,1659587971.531036,
+1,1659587976.031036,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659587976.031464,read the current time ,1659587976.031464,
+1,1659590100.0,"('delay until ', 1659590100.0)",SE0>script delayuntil 1659590100,
+1,1659590100.007019,read the current time ,1659590100.007019,
+-1,1659590103.007019,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659590113.007019,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659590113.007019,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659590143.007019,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659590143.007019,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659590163.007019,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659590163.007019,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659590168.007019,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659590168.007019,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659592800.0,"('delay until ', 1659592800.0)",SE0>script delayuntil 1659592800,
+1,1659592800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659592800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659592800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659592800.011017,read the current time ,1659592800.011017,
+1,1659592800.011017,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659592801.011017,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659592801.011017,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659592802.011017,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659592802.011017,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659592982.011017,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659592982.011017,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659592982.011017,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659592982.011017,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659592982.011017,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659592992.011017,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659592992.018097,read the current time ,1659592992.018097,
+1,1659592992.018097,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659593002.018097,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593002.018097,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659593012.018097,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593012.018097,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659593022.018097,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593022.018097,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659593062.018097,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659593062.025208,read the current time ,1659593062.025208,
+1,1659593062.025208,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659593072.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593072.025208,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659593082.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593082.025208,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659593092.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593092.025208,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659593152.025208,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659593152.032166,read the current time ,1659593152.032166,
+1,1659593152.032166,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659593153.032166,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659593153.032166,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659593154.032166,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659593154.032166,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659593155.032166,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659593155.032166,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659593215.032166,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659593215.035309,read the current time ,1659593215.035309,
+1,1659593215.035309,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659593225.035309,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593225.035309,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659593235.035309,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593235.035309,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659593245.035309,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593245.035309,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659593305.035309,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659593305.038116,read the current time ,1659593305.038116,
+1,1659593308.538116,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659593308.538086,read the current time ,1659593308.538086,
+1,1659593308.538086,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659593318.538086,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593318.538086,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659593358.538086,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659593358.538086,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659593368.538086,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659593368.538086,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659593368.544861,read the current time ,1659593368.544861,
+1,1659593373.044861,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659593373.045227,read the current time ,1659593373.045227,
+1,1659595500.0,"('delay until ', 1659595500.0)",SE0>script delayuntil 1659595500,
+1,1659595500.00528,read the current time ,1659595500.00528,
+1,1659595500.00528,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659595510.00528,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659595510.00528,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659595540.00528,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659595540.00528,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659595560.00528,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659595560.00528,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659595565.00528,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659595565.00528,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659598200.0,"('delay until ', 1659598200.0)",SE0>script delayuntil 1659598200,
+1,1659598200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659598200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659598200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659598200.008911,read the current time ,1659598200.008911,
+1,1659598200.008911,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659598201.008911,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659598201.008911,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659598202.008911,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659598202.008911,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659598382.008911,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659598382.008911,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659598382.008911,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659598382.008911,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659598382.008911,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659598392.008911,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598392.02063,read the current time ,1659598392.02063,
+1,1659598392.02063,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659598402.02063,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598402.02063,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659598412.02063,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598412.02063,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659598422.02063,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598422.02063,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659598462.02063,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659598462.023743,read the current time ,1659598462.023743,
+1,1659598462.023743,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659598472.023743,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659598475.023743,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659598485.023743,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598485.023743,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659598495.023743,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598495.023743,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659598555.023743,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659598555.025543,read the current time ,1659598555.025543,
+1,1659598555.025543,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659598556.025543,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659598556.025543,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659598557.025543,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659598557.025543,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659598558.025543,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659598558.025543,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659598618.025543,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659598618.028717,read the current time ,1659598618.028717,
+1,1659598618.028717,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659598628.028717,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598628.028717,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659598638.028717,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598638.028717,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659598648.028717,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598648.028717,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659598708.028717,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659598708.031586,read the current time ,1659598708.031586,
+1,1659598711.531586,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659598711.531525,read the current time ,1659598711.531525,
+1,1659598711.531525,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659598721.531525,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598721.531525,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659598761.531525,"('delay of ', 40.0)",SE0>script delay 40000,
+-1,1659598764.531525,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659598774.531525,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659598774.531525,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659598774.5354,read the current time ,1659598774.5354,
+1,1659598779.0354,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659598779.035614,read the current time ,1659598779.035614,
+1,1659600900.0,"('delay until ', 1659600900.0)",SE0>script delayuntil 1659600900,
+1,1659600900.004974,read the current time ,1659600900.004974,
+1,1659600900.004974,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659600910.004974,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659600910.004974,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659600940.004974,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659600940.004974,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659600960.004974,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659600960.004974,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659600965.004974,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659600965.004974,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659603600.0,"('delay until ', 1659603600.0)",SE0>script delayuntil 1659603600,
+1,1659603600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659603600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659603600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659603600.011566,read the current time ,1659603600.011566,
+1,1659603600.011566,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659603601.011566,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659603601.011566,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659603602.011566,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659603602.011566,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659603782.011566,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659603782.011566,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659603782.011566,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659603782.011566,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659603782.011566,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659603792.011566,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603792.021606,read the current time ,1659603792.021606,
+1,1659603792.021606,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659603802.021606,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603802.021606,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659603812.021606,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603812.021606,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659603822.021606,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603822.021606,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659603862.021606,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659603862.028687,read the current time ,1659603862.028687,
+1,1659603862.028687,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659603872.028687,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603872.028687,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659603882.028687,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603882.028687,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659603892.028687,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659603892.028687,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659603952.028687,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659603952.031647,read the current time ,1659603952.031647,
+1,1659603952.031647,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659603953.031647,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659603953.031647,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659603954.031647,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659603954.031647,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659603955.031647,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659603955.031647,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659604015.031647,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659604015.034851,read the current time ,1659604015.034851,
+1,1659604015.034851,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659604025.034851,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659604028.034851,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659604038.034851,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659604038.034851,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659604048.034851,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659604048.034851,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659604108.034851,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659604108.043579,read the current time ,1659604108.043579,
+1,1659604111.543579,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659604111.543549,read the current time ,1659604111.543549,
+1,1659604111.543549,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659604121.543549,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659604121.543549,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659604161.543549,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659604161.543549,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659604171.543549,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659604171.543549,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659604171.548676,read the current time ,1659604171.548676,
+1,1659604176.048676,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659604176.048645,read the current time ,1659604176.048645,
+1,1659606300.0,"('delay until ', 1659606300.0)",SE0>script delayuntil 1659606300,
+1,1659606300.004608,read the current time ,1659606300.004608,
+-1,1659606303.004608,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659606313.004608,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659606313.004608,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659606343.004608,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659606343.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659606363.004608,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659606363.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659606368.004608,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659606368.004608,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659609000.0,"('delay until ', 1659609000.0)",SE0>script delayuntil 1659609000,
+1,1659609000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659609000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659609000.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659609000.011902,read the current time ,1659609000.011902,
+1,1659609000.011902,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659609001.011902,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659609001.011902,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659609002.011902,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659609002.011902,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659609182.011902,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659609182.011902,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659609182.011902,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659609182.011902,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659609182.011902,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659609192.011902,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609192.024597,read the current time ,1659609192.024597,
+1,1659609192.024597,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659609202.024597,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609202.024597,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659609212.024597,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609212.024597,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659609222.024597,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609222.024597,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659609262.024597,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659609262.027954,read the current time ,1659609262.027954,
+1,1659609262.027954,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659609272.027954,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609272.027954,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659609282.027954,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609282.027954,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659609292.027954,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609292.027954,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659609352.027954,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659609352.031219,read the current time ,1659609352.031219,
+1,1659609352.031219,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659609353.031219,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659609353.031219,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659609354.031219,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659609354.031219,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659609355.031219,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659609355.031219,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659609415.031219,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659609415.034515,read the current time ,1659609415.034515,
+1,1659609415.034515,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659609425.034515,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609425.034515,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659609435.034515,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609435.034515,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659609445.034515,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609445.034515,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659609505.034515,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659609505.037201,read the current time ,1659609505.037201,
+1,1659609508.537201,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659609508.53714,read the current time ,1659609508.53714,
+1,1659609508.53714,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659609518.53714,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609518.53714,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659609558.53714,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659609558.53714,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659609568.53714,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659609568.53714,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659609568.543243,read the current time ,1659609568.543243,
+1,1659609573.043243,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659609573.043274,read the current time ,1659609573.043274,
+1,1659611700.0,"('delay until ', 1659611700.0)",SE0>script delayuntil 1659611700,
+1,1659611700.006104,read the current time ,1659611700.006104,
+1,1659611700.006104,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659611710.006104,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659611710.006104,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659611740.006104,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659611740.006104,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659611760.006104,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659611760.006104,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659611765.006104,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659611765.006104,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659614400.0,"('delay until ', 1659614400.0)",SE0>script delayuntil 1659614400,
+1,1659614400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659614400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659614400.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659614400.012451,read the current time ,1659614400.012451,
+1,1659614400.012451,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659614401.012451,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659614401.012451,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659614402.012451,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659614402.012451,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659614582.012451,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659614582.012451,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659614582.012451,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659614582.012451,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659614582.012451,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659614592.012451,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614592.021851,read the current time ,1659614592.021851,
+1,1659614592.021851,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659614602.021851,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614602.021851,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659614612.021851,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614612.021851,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659614622.021851,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614622.021851,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659614662.021851,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659614662.025208,read the current time ,1659614662.025208,
+1,1659614662.025208,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659614672.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614672.025208,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659614682.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614682.025208,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659614692.025208,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614692.025208,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659614752.025208,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659614752.032349,read the current time ,1659614752.032349,
+1,1659614752.032349,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659614753.032349,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659614753.032349,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659614754.032349,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659614754.032349,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659614755.032349,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659614755.032349,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659614815.032349,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659614815.035645,read the current time ,1659614815.035645,
+1,1659614815.035645,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659614825.035645,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614825.035645,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659614835.035645,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614835.035645,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659614845.035645,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614845.035645,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659614905.035645,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659614905.038605,read the current time ,1659614905.038605,
+1,1659614908.538605,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659614908.538574,read the current time ,1659614908.538574,
+1,1659614908.538574,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659614918.538574,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614918.538574,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659614958.538574,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659614958.538574,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659614968.538574,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659614968.538574,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659614968.542389,read the current time ,1659614968.542389,
+1,1659614973.042389,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659614973.042755,read the current time ,1659614973.042755,
+1,1659617100.0,"('delay until ', 1659617100.0)",SE0>script delayuntil 1659617100,
+1,1659617100.005646,read the current time ,1659617100.005646,
+1,1659617100.005646,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659617110.005646,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659617110.005646,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659617140.005646,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659617140.005646,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659617160.005646,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659617160.005646,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659617165.005646,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659617165.005646,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659619800.0,"('delay until ', 1659619800.0)",SE0>script delayuntil 1659619800,
+1,1659619800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659619800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659619800.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659619800.005798,read the current time ,1659619800.005798,
+1,1659619800.005798,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659619801.005798,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659619801.005798,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659619802.005798,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659619802.005798,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659619982.005798,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659619982.005798,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659619982.005798,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+-1,1659619985.005798,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659619985.005798,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659619995.005798,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659619995.012939,read the current time ,1659619995.012939,
+1,1659619995.012939,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659620005.012939,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620005.012939,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659620015.012939,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620015.012939,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659620025.012939,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620025.012939,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659620065.012939,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659620065.019348,read the current time ,1659620065.019348,
+1,1659620065.019348,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659620075.019348,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620075.019348,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659620085.019348,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620085.019348,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659620095.019348,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620095.019348,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659620155.019348,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659620155.022522,read the current time ,1659620155.022522,
+1,1659620155.022522,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659620156.022522,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659620156.022522,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659620157.022522,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659620157.022522,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659620158.022522,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659620158.022522,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659620218.022522,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659620218.026825,read the current time ,1659620218.026825,
+1,1659620218.026825,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659620228.026825,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620228.026825,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659620238.026825,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620238.026825,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659620248.026825,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620248.026825,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659620308.026825,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659620308.030792,read the current time ,1659620308.030792,
+1,1659620311.530792,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659620311.530762,read the current time ,1659620311.530762,
+1,1659620311.530762,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659620321.530762,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620321.530762,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659620361.530762,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659620361.530762,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659620371.530762,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659620371.530762,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659620371.535431,read the current time ,1659620371.535431,
+1,1659620376.035431,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659620376.035004,read the current time ,1659620376.035004,
+1,1659622500.0,"('delay until ', 1659622500.0)",SE0>script delayuntil 1659622500,
+1,1659622500.001892,read the current time ,1659622500.001892,
+-1,1659622503.001892,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659622513.001892,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659622513.001892,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659622543.001892,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659622543.001892,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659622563.001892,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659622563.001892,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659622568.001892,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659622568.001892,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659625200.0,"('delay until ', 1659625200.0)",SE0>script delayuntil 1659625200,
+1,1659625200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659625200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659625200.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659625200.011169,read the current time ,1659625200.011169,
+1,1659625200.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659625201.011169,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659625201.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659625202.011169,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659625202.011169,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659625382.011169,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659625382.011169,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659625382.011169,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659625382.011169,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+1,1659625382.011169,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659625392.011169,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625392.020874,read the current time ,1659625392.020874,
+1,1659625392.020874,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659625402.020874,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625402.020874,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659625412.020874,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625412.020874,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659625422.020874,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625422.020874,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659625462.020874,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659625462.025055,read the current time ,1659625462.025055,
+1,1659625462.025055,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659625472.025055,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625472.025055,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659625482.025055,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625482.025055,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659625492.025055,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625492.025055,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659625552.025055,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659625552.028107,read the current time ,1659625552.028107,
+1,1659625552.028107,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659625553.028107,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659625553.028107,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659625554.028107,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659625554.028107,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659625555.028107,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659625555.028107,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659625615.028107,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659625615.031403,read the current time ,1659625615.031403,
+-1,1659625618.031403,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659625628.031403,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625628.031403,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659625638.031403,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625638.031403,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659625648.031403,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625648.031403,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659625708.031403,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659625708.033325,read the current time ,1659625708.033325,
+1,1659625711.533325,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659625711.533264,read the current time ,1659625711.533264,
+1,1659625711.533264,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659625721.533264,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625721.533264,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659625761.533264,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659625761.533264,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659625771.533264,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659625771.533264,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659625771.538177,read the current time ,1659625771.538177,
+1,1659625776.038177,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659625776.038483,read the current time ,1659625776.038483,
+1,1659627900.0,"('delay until ', 1659627900.0)",SE0>script delayuntil 1659627900,
+1,1659627900.00293,read the current time ,1659627900.00293,
+1,1659627900.00293,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659627910.00293,"('delay of ', 10.0)",SE0>script delay 10000,
+-1,1659627913.00293,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659627943.00293,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659627943.00293,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659627963.00293,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659627963.00293,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659627968.00293,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659627968.00293,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659630600.0,"('delay until ', 1659630600.0)",SE0>script delayuntil 1659630600,
+1,1659630600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000800201C')"
+1,1659630600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A00341C')"
+1,1659630600.0,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000700391C')"
+1,1659630600.012817,read the current time ,1659630600.012817,
+1,1659630600.012817,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007010100')"
+1,1659630601.012817,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659630601.012817,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A010100')"
+1,1659630602.012817,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659630602.012817,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008010100')"
+1,1659630782.012817,"('delay of ', 180.0)",SE0>script delay 180000,
+1,1659630782.012817,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+-1,1659630785.012817,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659630785.012817,34,3,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 0F')"
+-1,1659630788.012817,35,3,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 0F')"
+1,1659630798.012817,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630798.020325,read the current time ,1659630798.020325,
+1,1659630798.020325,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659630808.020325,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630808.020325,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659630818.020325,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630818.020325,25,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 01')"
+1,1659630828.020325,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630828.020325,26,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 01')"
+1,1659630868.020325,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659630868.023926,read the current time ,1659630868.023926,
+1,1659630868.023926,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659630878.023926,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630878.023926,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659630888.023926,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630888.023926,27,11,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 02')"
+1,1659630898.023926,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659630898.023926,28,11,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 02')"
+1,1659630958.023926,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659630958.031525,read the current time ,1659630958.031525,
+1,1659630958.031525,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659630959.031525,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659630959.031525,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659630960.031525,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659630960.031525,9,8,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 08')"
+1,1659630961.031525,"('delay of ', 1.0)",SE0>script delay 1000,
+1,1659630961.031525,13,1,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 01')"
+1,1659631021.031525,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659631021.035065,read the current time ,1659631021.035065,
+1,1659631021.035065,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659631031.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659631031.035065,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659631041.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659631041.035065,1,0,"('cmnd found in list ', 'SE0>csp txrx 12 8 3000 00')"
+1,1659631051.035065,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659631051.035065,12,0,"('cmnd found in list ', 'SE0>csp txrx 13 8 3000 00')"
+1,1659631111.035065,"('delay of ', 60.0)",SE0>script delay 60000,
+1,1659631111.038086,read the current time ,1659631111.038086,
+1,1659631114.538086,"('delay of ', 3.5)",SE0>script delay 3500,
+1,1659631114.538055,read the current time ,1659631114.538055,
+1,1659631114.538055,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659631124.538055,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659631124.538055,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659631164.538055,"('delay of ', 40.0)",SE0>script delay 40000,
+1,1659631164.538055,23,14,"('cmnd found in list ', 'SE0>csp txrx 12 9 3000 0B0B00090808080890010808')"
+1,1659631174.538055,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659631174.538055,24,14,"('cmnd found in list ', 'SE0>csp txrx 13 9 3000 0F0F00090804080408040804')"
+1,1659631174.543121,read the current time ,1659631174.543121,
+1,1659631179.043121,"('delay of ', 4.5)",SE0>script delay 4500,
+1,1659631179.042419,read the current time ,1659631179.042419,
+1,1659633300.0,"('delay until ', 1659633300.0)",SE0>script delayuntil 1659633300,
+1,1659633300.009216,read the current time ,1659633300.009216,
+1,1659633300.009216,36,12,"('cmnd found in list ', 'SE0>csp txrx 12 4 3000 08')"
+1,1659633310.009216,"('delay of ', 10.0)",SE0>script delay 10000,
+1,1659633310.009216,37,12,"('cmnd found in list ', 'SE0>csp txrx 13 4 3000 08')"
+1,1659633340.009216,"('delay of ', 30.0)",SE0>script delay 30000,
+1,1659633340.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0008000000')"
+1,1659633360.009216,"('delay of ', 20.0)",SE0>script delay 20000,
+1,1659633360.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 000A000000')"
+1,1659633365.009216,"('delay of ', 5.0)",SE0>script delay 5000,
+1,1659633365.009216,33,-1,"('cmnd found in list ', 'SE0>csp txrx 4 14 600 0007000000')"
+1,1659633365.009216,-1,17,LOG END
