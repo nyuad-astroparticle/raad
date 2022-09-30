@@ -22,4 +22,6 @@ dependencies:
   - ipywidgets=7.7.0
   - ipympl=0.9.1
   - plotly=5.8.2
+  - sshrunnel=0.4.0
+  - pymysql=1.0.2
 prefix: /home/nyuad/miniconda3/envs/RAAD
