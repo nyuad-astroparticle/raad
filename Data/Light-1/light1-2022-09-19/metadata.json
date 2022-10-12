@@ -1,0 +1,22 @@
+{
+    "start_time": "2022-09-20 22:36:04",
+    "end_time": "2022-10-12 12:45:00",
+    "hv_SiPM": 0,
+    "hv_PMT": 0,
+    "hv_veto_SiPM": 9,
+    "hv_veto_PMT": 9,
+    "thresholds_SiPM": {
+        "channel_0": 3904,
+        "channel_1": 5632,
+        "channel_2": 400,
+        "channel_3": 5632
+    },
+    "thresholds_PMT": {
+        "channel_0": 65535,
+        "channel_1": 65535,
+        "channel_2": 65535,
+        "channel_3": 65535
+    },
+    "custom_scenario_PMT": "00000009FFFFFFFFFFFFFFFF",
+    "custom_scenario_SiPM": "00000009400F001690010016"
+}
