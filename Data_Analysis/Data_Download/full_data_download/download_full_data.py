@@ -73,7 +73,7 @@ def download_data(filepath:str='./',buffers=range(1,8),MAX:int=5000,start_time:s
         filenames.append(fname)
 
     # Download the script log
-    log         = download_seq_nr('pc_se0_log')
+    log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
     log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
     decoded_log = rp.log_expand(text=log)
 
