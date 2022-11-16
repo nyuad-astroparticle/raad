@@ -62,27 +62,27 @@ def download_data(filepath:str='./',buffers=range(1,8),MAX:int=5000,start_time:s
     filenames = []
 
     # First go ahead and download all the buffers
-    # for buffer in tqdm(buffers,desc='Downloading Buffer'):
-    #     # Download the data of the buffer
-    #     fileName    = "pc_buff"+str(buffer)
-    #     data        = download_seq_nr(fileName,MAX=MAX,start_time=start_time,end_time=end_time)
+    for buffer in tqdm(buffers,desc='Downloading Buffer'):
+        # Download the data of the buffer
+        fileName    = "pc_buff"+str(buffer)
+        data        = download_seq_nr(fileName,MAX=MAX,start_time=start_time,end_time=end_time)
 
-    #     # Save the data of the buffer
-    #     fname   = rp.save_raw_data(data,filepath=filepath,buffer=buffer)
-    #     filenames.append(fname)
+        # Save the data of the buffer
+        fname   = rp.save_raw_data(data,filepath=filepath,buffer=buffer)
+        filenames.append(fname)
 
     # Download the script log
-    log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
-    log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
-    decoded_log = rp.log_expand(text=log)
+    # log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
+    # log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
+    # decoded_log = rp.log_expand(text=log)
 
-    # Extract the metadata from the logfile
-    metadata = rp.log_metadata(decoded_log=decoded_log)
+    # # Extract the metadata from the logfile
+    # metadata = rp.log_metadata(decoded_log=decoded_log)
 
-    # Save the datafile as a json on the same directory
-    with open(filepath + "metadata.json","w") as meta_file: rp.json.dump(metadata,meta_file,indent=4)
+    # # Save the datafile as a json on the same directory
+    # with open(filepath + "metadata.json","w") as meta_file: rp.json.dump(metadata,meta_file,indent=4)
 
-    return metadata
+    # return metadata
 
 if __name__ == '__main__': 
-    download_data(end_time='2022-10-25T06:26:00')
+    download_data(end_time='2022-10-25T06:26:00',buffers=(4,5))
