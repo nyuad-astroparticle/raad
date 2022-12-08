@@ -1,0 +1,2 @@
+source /opt/applications/geant4/geant4.9.6-install/bin/geant4.sh
+
