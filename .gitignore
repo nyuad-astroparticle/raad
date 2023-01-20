@@ -4,3 +4,7 @@ Data_Analysis/Data_Download/storage/pc_buff1.last
 .DS_Store
 Data/FULL_DATA/*
 Data_Analysis/Background_Model/Data/dump.txt
+Data_Analysis/Data_Download/full_data_download/*.dat
+Data_Analysis/Data_Download/full_data_download/COMPLETE/*
+Data_Analysis/Data_Download/full_data_download/*.txt
+Data_Analysis/Data_Download/full_data_download/*.json
