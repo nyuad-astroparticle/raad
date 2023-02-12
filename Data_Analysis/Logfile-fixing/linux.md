@@ -36,7 +36,7 @@ $ sudo apt install python
 After you have installed python, all you need to do is to install our custom library ``raadpy`` that we developed specifically for the analysis of LIGHT-1 data. Simply type to your terminal:
 
 ```shell
-$ pip install jupyter notebook raadpy
+$ pip install jupyter notebook ipympl raadpy
 ```
 
 ## Get the data
