@@ -35,7 +35,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 Once this is done type the two commands as follows
 ```shell
 $ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-$ brew install python@3.9
+$ brew install python
 ```
 
 ## RAADpy - Our custom library

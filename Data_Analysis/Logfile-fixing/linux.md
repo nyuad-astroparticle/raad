@@ -28,7 +28,7 @@ Our analysis is done in python, if you have python 3 installed you can skip this
 
 ```shell
 $ sudo apt update && sudo apt upgrade -y
-$ sudo apt install python3.9
+$ sudo apt install python
 ```
 
 ## RAADpy - Our custom library

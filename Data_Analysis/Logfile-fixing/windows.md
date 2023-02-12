@@ -34,7 +34,7 @@ $ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Inp
 and then to install python
 
 ```shell
-choco install python --version=3.9.0
+choco install -y python
 ```
 
 ## RAADpy - Our custom library
