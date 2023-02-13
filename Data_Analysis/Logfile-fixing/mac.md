@@ -17,7 +17,7 @@ For detailed instructions and older versions of the OS go [here](https://osxdail
 
 1. Pull down the  Apple menu and go to “System Settings”
 2. Open the “General” preference panel”
-3. Go to “General”
+3. Go to “Sharing”
 4. Toggle the switch for “Remote Login” to turn on the SSH server on the Mac
 5. Click the (i) button to customize user access and check the box for “Allow full disk access for remote users”
 6. The SSH server starts immediately, and the Mac is able to receive inbound SSH connections
