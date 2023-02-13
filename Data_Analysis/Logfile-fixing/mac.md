@@ -29,13 +29,13 @@ Our analysis is done in python, if you have python 3 installed you can skip this
 We first install Homebrew. Homebrew is a tool that installs things from your terminal. (don't copy the '$')
 
 ```shell
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Once this is done type the two commands as follows
 ```shell
-$ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-$ brew install python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+brew install python
 ```
 
 ## RAADpy - Our custom library
@@ -43,7 +43,7 @@ $ brew install python
 After you have installed python, all you need to do is to install our custom library ``raadpy`` that we developed specifically for the analysis of LIGHT-1 data. Simply type to your terminal:
 
 ```shell
-$ pip install jupyter notebook ipympl raadpy
+pip install jupyter notebook ipympl raadpy
 ```
 
 ## Get the data
@@ -53,8 +53,8 @@ We have give you unique access to the supercomputer in the lab just for today! Y
 In your terminal type
 
 ```shell
-$ mkdir logfix && cd "$_"
-$ curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.ipynb
+mkdir logfix && cd "$_"
+curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.ipynb
 ```
 
 # You are ready!
@@ -62,7 +62,7 @@ $ curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.i
 Now you should have everything in order to get started. Type the following on your terminal to open the jupyter notebook to start.
 
 ```shell
-$ jupyter notebook logfile-fixup-example.ipynb
+jupyter notebook logfile-fixup-example.ipynb
 ```
 
 **Go back to the main page by clicking [here](./README.md).**

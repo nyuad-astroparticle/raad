@@ -28,7 +28,7 @@ On Windows 10 (version 1803 and newer):
 Our analysis is done in python, if you have python 3 installed you can skip this step. If not, here is a quick way to install it. Type the following in your terminal to first install a package manager
 
 ```shell
-$ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
 and then to install python
@@ -42,7 +42,7 @@ choco install -y python
 After you have installed python, all you need to do is to install our custom library ``raadpy`` that we developed specifically for the analysis of LIGHT-1 data. Simply type to your terminal:
 
 ```shell
-$ pip install jupyter notebook ipympl raadpy
+pip install jupyter notebook ipympl raadpy
 ```
 
 ## Get the data
@@ -52,8 +52,8 @@ We have give you unique access to the supercomputer in the lab just for today! Y
 In your terminal type
 
 ```shell
-$ mkdir logfix && cd "$_"
-$ wget -r -np -nH --cut-dirs=3 -R index.html http://arneodolab.abudhabi.nyu.edu/logfix/logfile-fixup-example.ipynb
+mkdir logfix && cd "$_"
+wget -r -np -nH --cut-dirs=3 -R index.html http://arneodolab.abudhabi.nyu.edu/logfix/logfile-fixup-example.ipynb
 ```
 
 # You are ready!
@@ -61,7 +61,7 @@ $ wget -r -np -nH --cut-dirs=3 -R index.html http://arneodolab.abudhabi.nyu.edu/
 Now you should have everything in order to get started. Type the following on your terminal to open the jupyter notebook to start.
 
 ```shell
-$ jupyter notebook logfile-fixup-example.ipynb
+jupyter notebook logfile-fixup-example.ipynb
 ```
 
 **Go back to the main page by clicking [here](./README.md).**
