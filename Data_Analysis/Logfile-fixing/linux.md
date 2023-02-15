@@ -47,7 +47,7 @@ In your terminal type
 
 ```shell
 mkdir logfix && cd "$_"
-wget -r -np -nH --cut-dirs=3 -R index.html http://arneodolab.abudhabi.nyu.edu/logfix/logfile-fixup-example.ipynb
+wget -r -np -nH --cut-dirs=3 -R index.html http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.ipynb
 ```
 
 # You are ready!
