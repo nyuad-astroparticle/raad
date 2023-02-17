@@ -71,3 +71,78 @@ SE0>rtc read
 curr rtc time 1671688800.014984 s, 2022-12-22 06:00:00 
 OK
 ```
+
+# Sample Script
+
+Here is a sample script to show the commands you would expect to see in one orbit. Bare in mind that the script changed throughout the mission, so it might be a little different for your logfile. Also bare in mind that the following does not include the response form the computer. In the logfile you will see the output of each command as well. Before each command you will see an ``SE0>``.
+```shell
+# Start Of Script 22 December 2022 0:00:00
+rtc read                        # Read the time
+script delayuntil 1671667200    # Delay until some point 
+csp txrx 4 14 600 000800201C    # Prepare to turn on
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read                        # Read the time
+fs list                         # Show the storage of the buffers
+rtc read                        # Read the time
+csp txrx 4 14 600 0007010100    # POWER ON
+script delay 1000               # Delay
+csp txrx 4 14 600 000A010100    # Setup things
+script delay 1000
+csp txrx 4 14 600 0008010100
+script delay 180000             # Do nothing wile you are measuring
+csp txrx 12 8 3000 0F           # Some more setup
+csp txrx 13 8 3000 0F
+csp txrx 12 8 3000 0F
+csp txrx 13 8 3000 0F
+script delay 10000
+rtc read
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 10000
+csp txrx 12 4 3000 01
+script delay 10000
+csp txrx 13 4 3000 01
+script delay 40000
+rtc read
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+script delay 10000
+csp txrx 12 4 3000 02
+script delay 10000
+csp txrx 13 4 3000 02
+rtc read
+script delay 60000
+rtc read                        # Set the power supply voltages
+csp txrx 12 9 3000 00000009FFFFFFFFFFFFFFFF
+script delay 10000
+csp txrx 13 9 3000 00000009FFFFFFFFFFFFFFFF
+script delay 10000
+csp txrx 12 9 3000 00000009FFFFFFFFFFFFFFFF
+script delay 10000 
+csp txrx 13 9 3000 00000009FFFFFFFFFFFFFFFF
+rtc read
+script delay 120000
+rtc read
+script delayuntil 1671669720    # Wait until a specific point
+rtc read
+csp txrx 12 4 3000 08           # Start the shutdown cycle
+script delay 10000
+csp txrx 13 4 3000 08
+script delay 30000
+csp txrx 4 14 600 0008000000
+script delay 20000
+csp txrx 4 14 600 000A000000
+script delay 5000
+csp txrx 4 14 600 0007000000    # POWER OFF
+script delayuntil 1671672600    # Wait some time
+csp txrx 4 14 600 000800201C    # Preapre for the next power on
+csp txrx 4 14 600 000A00341C
+csp txrx 4 14 600 000700391C
+rtc read
+csp txrx 4 14 600 0007010100    # POWER ON
+# End Of Script 22 Dec 2022 23:59:59
+
+```
