@@ -57,7 +57,7 @@ def download_seq_nr(fileName:str,start:int=0,end:int=None,MAX:int=5000,start_tim
     return data
 
 # Download script packet
-def download_data(filepath:str='./',buffers=range(1,8),MAX:int=5000,start_time:str=None,end_time:str=None):
+def download_data(filepath:str='./',buffers=range(1,8),log=True,MAX:int=5000,start_time:str=None,end_time:str=None):
     # List that holds all the filenames
     filenames = []
 
@@ -67,22 +67,25 @@ def download_data(filepath:str='./',buffers=range(1,8),MAX:int=5000,start_time:s
         fileName    = "pc_buff"+str(buffer)
         data        = download_seq_nr(fileName,MAX=MAX,start_time=start_time,end_time=end_time)
 
+        # print(data)
+
         # Save the data of the buffer
         fname   = rp.save_raw_data(data,filepath=filepath,buffer=buffer)
         filenames.append(fname)
 
-    # Download the script log
-    log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
-    log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
-    decoded_log = rp.log_expand(text=log)
+    if log:
+        # Download the script log
+        log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
+        log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
+        decoded_log = rp.log_expand(text=log)
 
-    # Extract the metadata from the logfile
-    metadata = rp.log_metadata(decoded_log=decoded_log)
+        # Extract the metadata from the logfile
+        metadata = rp.log_metadata(decoded_log=decoded_log)
 
-    # Save the datafile as a json on the same directory
-    with open(filepath + "metadata.json","w") as meta_file: rp.json.dump(metadata,meta_file,indent=4)
+        # Save the datafile as a json on the same directory
+        with open(filepath + "metadata.json","w") as meta_file: rp.json.dump(metadata,meta_file,indent=4)
 
-    return metadata
+        return metadata
 
 if __name__ == '__main__': 
-    download_data(end_time='2022-10-25T12:00:00',buffers=range(1,7))
+    download_data(buffers=[1,2,3,4,5,6,7], end_time = '2022-10-30T12:00:00.00') ##2022-10-26T12:00:00.00
