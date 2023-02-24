@@ -17,7 +17,7 @@ For detailed instructions and older versions of the OS go [here](https://osxdail
 
 1. Pull down the  Apple menu and go to “System Settings”
 2. Open the “General” preference panel”
-3. Go to “General”
+3. Go to “Sharing”
 4. Toggle the switch for “Remote Login” to turn on the SSH server on the Mac
 5. Click the (i) button to customize user access and check the box for “Allow full disk access for remote users”
 6. The SSH server starts immediately, and the Mac is able to receive inbound SSH connections
@@ -29,13 +29,13 @@ Our analysis is done in python, if you have python 3 installed you can skip this
 We first install Homebrew. Homebrew is a tool that installs things from your terminal. (don't copy the '$')
 
 ```shell
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Once this is done type the two commands as follows
 ```shell
-$ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-$ brew install python@3.9
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+brew install python
 ```
 
 ## RAADpy - Our custom library
@@ -43,7 +43,7 @@ $ brew install python@3.9
 After you have installed python, all you need to do is to install our custom library ``raadpy`` that we developed specifically for the analysis of LIGHT-1 data. Simply type to your terminal:
 
 ```shell
-$ pip install jupyter notebook raadpy
+pip install jupyter notebook ipympl raadpy
 ```
 
 ## Get the data
@@ -53,8 +53,8 @@ We have give you unique access to the supercomputer in the lab just for today! Y
 In your terminal type
 
 ```shell
-$ mkdir logfix && cd "$_"
-$ curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.ipynb
+mkdir logfix && cd "$_"
+curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.ipynb
 ```
 
 # You are ready!
@@ -62,7 +62,7 @@ $ curl -O http://arneodolab.abudhabi.nyu.edu:8000/logfix/logfile-fixup-example.i
 Now you should have everything in order to get started. Type the following on your terminal to open the jupyter notebook to start.
 
 ```shell
-$ jupyter notebook logfile-fixup-example.ipynb
+jupyter notebook logfile-fixup-example.ipynb
 ```
 
 **Go back to the main page by clicking [here](./README.md).**
