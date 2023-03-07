@@ -71,7 +71,7 @@ Here are result spectra
 
 **Trapped Protons**
 
-|                         Average Flux                         |                    Flux throguhout orbit                     |
+|                         Average Flux                         |                    Flux throughout orbit                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src=README.assets/image-20230307182658045.png width="50%"> | ![image-20230307182948593](README.assets/image-20230307182948593.png) |
 
@@ -81,7 +81,7 @@ Here are result spectra
 
 **Trapped Electrons**
 
-|                         Average Flux                         |                    Flux throguhout orbit                     |
+|                         Average Flux                         |                    Flux throughout orbit                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![image-20230307182816955](README.assets/image-20230307182816955.png) | ![image-20230307183820247](README.assets/image-20230307183820247.png) |
 
