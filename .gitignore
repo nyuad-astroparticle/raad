@@ -11,7 +11,5 @@ Data_Analysis/Data_Download/full_data_download/*.json
 Data_Analysis/Background_Model/Data/*.csv
 Data_Analysis/Background_Model/Data/*.txt
 Data_Analysis/Instrunment-Paper-Plots/*.psd
-<<<<<<< HEAD
 Data_Analysis/Instrunment-Paper-Plots/*.NEF*
-=======
->>>>>>> refs/remotes/origin/main
+Geant_BG_Model/.vscode
