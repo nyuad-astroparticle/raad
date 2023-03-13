@@ -1,2 +1,0 @@
-/opt/applications/geant4/geant4.9.6/bin/exampleB4a -m run1.mac
-

@@ -1,2 +1,0 @@
-root -q dump.cxx > dump.txt
-
