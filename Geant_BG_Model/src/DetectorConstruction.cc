@@ -30,15 +30,11 @@ For any help please contact Panos: po524@nyu.edu
 #include "G4SystemOfUnits.hh"
 
 
-DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction()
-{
-}
+DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction() {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-DetectorConstruction::~DetectorConstruction()
-{
-}
+DetectorConstruction::~DetectorConstruction() {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -100,8 +96,8 @@ void DetectorConstruction::DefineMaterials()
     // Lanthanium Bromochloride
     G4Material* LBC         = new G4Material("LBC", density=4.90*g/cm3,ncomponents=3);
     LBC->AddElement(La, number_of_atoms=1);
-    LBC->AddElement(Br, number_of_atoms=2.85);
-    LBC->AddElement(Cl, number_of_atoms=0.15);
+    LBC->AddElement(Br, number_of_atoms=3);
+    LBC->AddElement(Cl, number_of_atoms=1);
 
     // Some other bismuth germanium stuff
     G4Material* BGO         = new G4Material("BGO", density=9.22*g/cm3,ncomponents=3);
@@ -308,7 +304,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 0,                                      // No Rotation
                 G4ThreeVector(0.,0.,-0.4*mm),           // Position
                 aluminiumBoxLogicalVolume,              // Logical Volume 
-                "aluminiumBoxPhysicalVolume",           // Name           
+                "aluminiumBox",                         // Name           
                 worldLogicalVolume,                     // Logical Volume
                 false,                                  // No boolean opeartion
                 0,                                      // Copy Number
@@ -329,7 +325,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 0,                                      // Rotation
                 G4ThreeVector(0.,0.,-0.4*mm),           // Position
                 vetoLogicalVolume,                      // Logical Volume   
-                "vetoPhysicalVolume",                   // Name
+                "veto",                                 // Name
                 worldLogicalVolume,                     // The world volume
                 false,                                  // No boolean action0
                 0,                                      // Copy Number
@@ -351,7 +347,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 0,                                      // Rotation
                 G4ThreeVector(0.,0.,-1.4*mm),           // Position
                 momentiveLogicalVolume,                 // Logical Volume
-                "momentivePhysicalVolume",              // Name
+                "momentive",                            // Name
                 worldLogicalVolume,                     // World Volume
                 false,                                  // No boolean action
                 0,                                      // Copy Number
@@ -371,7 +367,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 0,                                      // Rotation
                 G4ThreeVector(0.,0.,-2.0*mm),           // Position
                 fiberglassLogicalVolume,                // Logical Volume
-                "fiberglassPhysicalVolume",             // Name
+                "fiberglass",                           // Name
                 worldLogicalVolume,                     // World Volume
                 false,                                  // Boolean Crap
                 0,                                      // Copy Number  
@@ -382,19 +378,19 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
     //===================================== Visualization attributes =====================================
 
-    G4VisAttributes* blue       = new G4VisAttributes(G4Colour(0.0,0.0,1.0));
+    G4VisAttributes* blue       = new G4VisAttributes(G4Colour(0.0, 0.0, 1.0, 0.3));
     blue->SetVisibility(true);
-    G4VisAttributes* red        = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
+    G4VisAttributes* red        = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0, 0.3));
     red->SetVisibility(true);
-    G4VisAttributes* green      = new G4VisAttributes(G4Colour(0.,1.0,0.));
+    G4VisAttributes* green      = new G4VisAttributes(G4Colour(0.0, 1.0, 0.0, 0.2));
     green->SetVisibility(true);
-    G4VisAttributes* white      = new G4VisAttributes(G4Colour(1.,1.0,1.0));
+    G4VisAttributes* white      = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0, 0.2));
     white->SetVisibility(true);
-    G4VisAttributes* yellow     = new G4VisAttributes(G4Colour(0.0,1.0,1.0));
+    G4VisAttributes* yellow     = new G4VisAttributes(G4Colour(0.0, 1.0, 1.0, 0.1));
     yellow->SetVisibility(true);
-    G4VisAttributes* nyu        = new G4VisAttributes(G4Colour(0.9,0.2,1.0));
+    G4VisAttributes* nyu        = new G4VisAttributes(G4Colour(0.9, 0.2, 1.0, 0.1));
     nyu->SetVisibility(true);
-    G4VisAttributes* invisible  = new G4VisAttributes(G4Colour(1.0,1.0,1.0));
+    G4VisAttributes* invisible  = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0));
     invisible->SetVisibility(false);
 
 

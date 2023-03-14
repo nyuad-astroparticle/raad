@@ -10,7 +10,7 @@ For any help please contact Panos: po524@nyu.edu
 ***********************************************************/
 
 #ifndef DetectorConstruction_h
-#define DetectorConstruction_h 1
+#define DetectorConstruction_h
 
 // Include some libraries from Geant4
 #include "G4VUserDetectorConstruction.hh"       // Elements used to construct the detector
