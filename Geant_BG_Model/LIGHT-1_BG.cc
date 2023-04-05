@@ -53,8 +53,9 @@ int main(int argc, char** argv){
     // Add UI elements
     G4UImanager* uiManager = G4UImanager::GetUIpointer();
     uiManager->ApplyCommand("/run/verbose 1");
-    uiManager->ApplyCommand("/vis/open OGL");
-    uiManager->ApplyCommand("/vis/drawVolume");
+    // uiManager->ApplyCommand("/control/execute ./macros/vis.mac");
+    // uiManager->ApplyCommand("/vis/open OGL");
+    // uiManager->ApplyCommand("/vis/drawVolume");
 
     // Start the UI
     ui->SessionStart();   

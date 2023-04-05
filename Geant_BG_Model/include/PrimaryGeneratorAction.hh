@@ -30,7 +30,7 @@ class ParticleMessenger;                                        // Class that ha
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-    PrimaryGeneratorAction(EventAction* eventAction);          // Constructor
+    PrimaryGeneratorAction(EventAction* eventAction);           // Constructor
     ~PrimaryGeneratorAction() override;                         // Destructor
 
     // Public methods to manage the particle production

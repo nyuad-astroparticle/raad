@@ -16,6 +16,14 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 file(GLOB sources "${PROJECT_SOURCE_DIR}/src/*.cc")
 file(GLOB headers "${PROJECT_SOURCE_DIR}/include/*.hh")
 
+# Add the macros
+set(MACROS "/macros/vis.mac" "/macros/orbit_proton.mac")
+
+foreach(_script ${MACROS})
+  configure_file(${PROJECT_SOURCE_DIR}/${_script} ${PROJECT_BINARY_DIR}/${_script} COPYONLY)
+endforeach()
+
+
 # Set up executable
 add_executable(LIGHT-1_BG LIGHT-1_BG.cc ${sources} ${headers})
 target_link_libraries(LIGHT-1_BG ${Geant4_LIBRARIES})

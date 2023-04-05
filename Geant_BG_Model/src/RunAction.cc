@@ -54,7 +54,7 @@ void RunAction::BeginOfRunAction(const G4Run* run)
     // Create the structure of the data as an Ntuple (Table)
     analysisManager->CreateNtuple("L1BG","LIGHT-1 Background Energy Depositions");
     analysisManager->CreateNtupleSColumn("Particle");
-    analysisManager->CreateNtupleIColumn("Event ID");
+    analysisManager->CreateNtupleIColumn("EventID");
     analysisManager->CreateNtupleDColumn("EnergyInitial");
     analysisManager->CreateNtupleDColumn("EdepCrystal1");
     analysisManager->CreateNtupleDColumn("EdepCrystal2");

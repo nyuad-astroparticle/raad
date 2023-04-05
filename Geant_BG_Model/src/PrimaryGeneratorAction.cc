@@ -105,14 +105,15 @@ G4ThreeVector PrimaryGeneratorAction::SampleStartPosition()
     // Generate an angle outside the tangent cone to the earth
 
     // Generate a random position outside
-    G4double theta = (G4UniformRand() * (2*pi - SAT_ANGLE) - SAT_ANGLE) * rad;
+    G4double theta = (G4UniformRand() * (pi - SAT_ANGLE)) * rad;
     G4double phi   = G4UniformRand() * 2*pi * rad;
     G4double r     = 10 * cm;
 
     // Then we shift the coordinates so that the origin is at the center of the detector
-    G4ThreeVector delta_center = G4ThreeVector(0,-71.2/2*mm,47.6/2*mm);
+    G4ThreeVector delta_center = G4ThreeVector(0,-71.2/2*mm,0);
 
     // Calculate the actual position of the particle
+    // return G4ThreeVector(5*cm,5*cm,5*cm);
     return G4ThreeVector(r*std::sin(theta)*std::cos(phi), r*std::cos(theta), r*std::sin(theta)*std::sin(phi)) + delta_center;
 }
 
@@ -122,7 +123,8 @@ G4ThreeVector PrimaryGeneratorAction::SampleStartPosition()
 G4ThreeVector PrimaryGeneratorAction::SampleMomentumDirection(G4ThreeVector position_start)
 {
     // Pick a random ending position inside the volume
-    G4ThreeVector position_end = G4ThreeVector(G4UniformRand()*71.2 - 71.2/2,G4UniformRand()*71.2 - 71.2/2,-G4UniformRand()*47.6);
+    G4ThreeVector position_end = G4ThreeVector((G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*47.6*mm);
+    // G4ThreeVector position_end = G4ThreeVector(0*cm,0*cm,0*cm);
 
     // Set particle Direction
     G4ThreeVector momentum_direction = position_end - position_start;       // Get a vector in the direction

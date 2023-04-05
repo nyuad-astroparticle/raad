@@ -45,15 +45,12 @@ void EventAction::zeroTrackers()
     energyDepMomentive      = 0;
     energyDepAluminiumBox   = 0;
     energyInitial           = 0;
+    particle                = "";
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void EventAction::BeginOfEventAction(const G4Event* event)
-{
-    // Set all the energies to zero
-    zeroTrackers();
-}
+void EventAction::BeginOfEventAction(const G4Event* event){}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -61,23 +58,21 @@ void EventAction::EndOfEventAction(const G4Event* event)
 {
     // Get the analysis Manager
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-
-    G4cout << "Hello from End of Event Action" << G4endl;
     
     // Add all the energies to the Analysis Manager
-    analysisManager->FillNtupleSColumn(0,0,particle);
-    analysisManager->FillNtupleIColumn(0,1,event->GetEventID());
-    analysisManager->FillNtupleDColumn(0,2,energyInitial);
-    G4cout << "Almost Bye from End of Event Action" << G4endl;
-    analysisManager->FillNtupleDColumn(0,3,energyDepCrystals[0]);
-    analysisManager->FillNtupleDColumn(0,4,energyDepCrystals[1]);
-    analysisManager->FillNtupleDColumn(0,5,energyDepCrystals[2]);
-    analysisManager->FillNtupleDColumn(0,6,energyDepCrystals[3]);
-    analysisManager->FillNtupleDColumn(0,7,energyDepVeto);
-    analysisManager->FillNtupleDColumn(0,8,energyDepEnclosure);
-    analysisManager->FillNtupleDColumn(0,9,energyDepMomentive);
-    analysisManager->FillNtupleDColumn(0,10,energyDepAluminiumBox);
+    analysisManager->FillNtupleSColumn(0,particle);
+    analysisManager->FillNtupleIColumn(1,event->GetEventID());
+    analysisManager->FillNtupleDColumn(2,energyInitial);
+    analysisManager->FillNtupleDColumn(3,energyDepCrystals[0]);
+    analysisManager->FillNtupleDColumn(4,energyDepCrystals[1]);
+    analysisManager->FillNtupleDColumn(5,energyDepCrystals[2]);
+    analysisManager->FillNtupleDColumn(6,energyDepCrystals[3]);
+    analysisManager->FillNtupleDColumn(7,energyDepVeto);
+    analysisManager->FillNtupleDColumn(8,energyDepEnclosure);
+    analysisManager->FillNtupleDColumn(9,energyDepMomentive);
+    analysisManager->FillNtupleDColumn(10,energyDepAluminiumBox);
     analysisManager->AddNtupleRow();
 
-    G4cout << "Bye from End of Event Action" << G4endl;
+    // Set all the energies to zero
+    zeroTrackers();
 }
