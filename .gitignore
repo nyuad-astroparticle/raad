@@ -13,3 +13,4 @@ Data_Analysis/Background_Model/Data/*.txt
 Data_Analysis/Instrunment-Paper-Plots/*.psd
 Data_Analysis/Instrunment-Paper-Plots/*.NEF*
 Geant_BG_Model/.vscode
+Geant_BG_Model/build/*
