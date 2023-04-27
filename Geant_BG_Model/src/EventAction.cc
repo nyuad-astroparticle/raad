@@ -15,7 +15,7 @@ For any help please contact Panos: po524@nyu.edu
 #include "EventAction.hh"
 
 // Include Geant4 predefined headers
-#include "AnalysisManager.hh"
+#include "G4AnalysisManager.hh"
 #include "G4Event.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -24,13 +24,16 @@ For any help please contact Panos: po524@nyu.edu
 EventAction::EventAction() : G4UserEventAction()
 {
     // Set all the energies to zero
+    energyDepCrystals = new G4double[4];
     zeroTrackers();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 // Destructor
-EventAction::~EventAction(){}
+EventAction::~EventAction(){
+    delete[] energyDepCrystals;
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -38,8 +41,7 @@ EventAction::~EventAction(){}
 void EventAction::zeroTrackers()
 {
     // Initialize Class Parameters
-    energyDepCrystals = new G4double[4];
-    for(int i=0;i<3;i++) energyDepCrystals[i] = 0;
+    for(int i=0;i<4;i++) energyDepCrystals[i] = 0;
     energyDepVeto           = 0;
     energyDepEnclosure      = 0;
     energyDepMomentive      = 0;

@@ -11,11 +11,11 @@ Danish......................................................
 For any help please contact Panos: po524@nyu.edu
 ***********************************************************/
 
-#ifndef AnalysisManager_h
-#define AnalysisManager_h
+// #ifndef AnalysisManager_h
+// #define AnalysisManager_h
 
-#include "G4CsvAnalysisManager.hh"
+// #include "G4CsvAnalysisManager.hh"
 
-using G4AnalysisManager = G4CsvAnalysisManager;
+// using G4AnalysisManager = G4CsvAnalysisManager;
 
-#endif
+// #endif

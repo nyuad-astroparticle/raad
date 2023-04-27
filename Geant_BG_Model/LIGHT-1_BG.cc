@@ -26,11 +26,14 @@ For any help please contact Panos: po524@nyu.edu
 
 
 int main(int argc, char** argv){
-    // Create the default run manager
-    auto runManager = G4RunManagerFactory::CreateRunManager();
 
-    // Create the UI
-    auto ui = new G4UIExecutive(argc,argv);
+    // Evaluate the arguments
+    G4UIExecutive* ui = nullptr;
+    if (argc == 1) {ui = new G4UIExecutive(argc,argv);}     // If no macro file has been created Create the UI
+
+    // Create the default run manager
+    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+    // auto runManager = new G4MTRunManager;
 
     // Initialize the detector, physics etc.
     runManager->SetUserInitialization(new DetectorConstruction());
@@ -52,17 +55,30 @@ int main(int argc, char** argv){
 
     // Add UI elements
     G4UImanager* uiManager = G4UImanager::GetUIpointer();
-    uiManager->ApplyCommand("/run/verbose 1");
-    // uiManager->ApplyCommand("/control/execute ./macros/vis.mac");
-    // uiManager->ApplyCommand("/vis/open OGL");
-    // uiManager->ApplyCommand("/vis/drawVolume");
+    
+    // Process the macro file or strat GUI
+    if (!ui){
+        // Don't print anything
+        uiManager->ApplyCommand("/run/verbose 0");
 
-    // Start the UI
-    ui->SessionStart();   
+        //Run the commands in batch mode
+        for (int i=1;i<argc;i++){                               // For each input
+            G4String command  = "/control/execute ";            // The command to execute it in Geant4
+            G4String filename = argv[1];                        // The input filename
+            uiManager->ApplyCommand(command + filename);        // Execute it
+        }
+    } else {
+        // Increase verbosity
+        uiManager->ApplyCommand("/run/verbose 1");
+
+        // Start the UI
+        uiManager->ApplyCommand("/control/execute ./macros/vis.mac");
+        ui->SessionStart();
+        delete ui;
+    }
 
     // Terminate the Simulation
     delete visManager;
-    delete ui;
     delete runManager;
     return 0;
 }

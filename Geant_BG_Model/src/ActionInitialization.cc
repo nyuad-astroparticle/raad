@@ -35,7 +35,7 @@ ActionInitialization::~ActionInitialization() {}
 // Set the run action as the overarching Run Manager of all threads
 void ActionInitialization::BuildForMaster() const 
 {
-    SetUserAction(new RunAction());
+    SetUserAction(new RunAction);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -43,9 +43,9 @@ void ActionInitialization::BuildForMaster() const
 // Set the action initializatin for each of the threads
 void ActionInitialization::Build() const
 {
-    EventAction* eventAction = new EventAction();
+    EventAction* eventAction = new EventAction;
 
-    SetUserAction(new RunAction());
+    SetUserAction(new RunAction);
     SetUserAction(eventAction);
     SetUserAction(new PrimaryGeneratorAction(eventAction));
     SetUserAction(new SteppingAction(eventAction));

@@ -20,11 +20,14 @@ For any help please contact Panos: po524@nyu.edu
 // Include Geant4 Predefined headers
 #include "G4UIdirectory.hh"
 #include "G4UIcmdWithADoubleAndUnit.hh"
-#include "G4UIcmdWith3VectorAndUnit.hh"
 #include "G4UIcmdWithAString.hh"
 #include "G4ThreeVector.hh"
 #include "G4ParticleTable.hh"
 #include "G4ParticleDefinition.hh"
+#include "G4UIcommand.hh"
+#include <fstream>
+
+using namespace std;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -50,13 +53,11 @@ ParticleMessenger::ParticleMessenger(PrimaryGeneratorAction* primaryGeneratorAct
     setEnergy->AvailableForStates(G4State_Idle);                                        // Available only when nothing is currently running
 
     // Set Spectrum
-    setSpectrum = new G4UIcmdWith3VectorAndUnit("/light1/setSpectrum",this);            // Command Name
+    setSpectrum = new G4UIcmdWithAString("/light1/setSpectrum",this);                   // Command Name
     setSpectrum->SetGuidance("Sets the fit parameters for sampling an energy spectrum");// Guidance Line 1
     setSpectrum->SetGuidance(" turns on random energy sampling");                       // Guidance Line 2
-    setSpectrum->SetParameterName("A","B","C",false);                                   // Parameter Names, all un-omittable
-    setEnergy->SetUnitCategory("Energy");                                               // Unit cateogry
-    setEnergy->SetDefaultUnit("MeV");                                                   // Unit for default value
-    setSpectrum->SetDefaultValue(G4ThreeVector(1,1,1));                                 // Default values
+    setSpectrum->SetParameterName("filename",false);                                    // Parameter Names, all un-omittable
+    setSpectrum->SetDefaultValue("./test.txt");                                         // Default values
     setSpectrum->AvailableForStates(G4State_Idle);                                      // Available only when nothing is currently running
 
     //Select Particle
@@ -87,21 +88,33 @@ ParticleMessenger::~ParticleMessenger()
 void ParticleMessenger::SetNewValue(G4UIcommand* command, G4String input)
 {
     // Create an ugly nested if else block to do so
-    if (command == setEnergy){                                          // Set Energy Command
-        G4double newEnergy  = setEnergy->GetNewDoubleValue(input);      // Get the new energy
-        G4double newUnit    = setEnergy->GetNewUnitValue(input);        // Get the new unit
-        primaryGenerator->setEnergy(newEnergy*newUnit);                 // Set the energy of the particles
+    if (command == setEnergy){                                                          // Set Energy Command
+        G4double newEnergy  = setEnergy->GetNewDoubleValue(input);                      // Get the new energy
+        G4double newUnit    = setEnergy->GetNewUnitValue(input);                        // Get the new unit
+        primaryGenerator->setEnergy(newEnergy*newUnit);                                 // Set the energy of the particles
     }
 
-    else if (command == setSpectrum){                                   // Set Spectrum Command
-        G4ThreeVector newFit = setSpectrum->GetNew3VectorValue(input);  // Get the new parameters
-        G4double newUnit     = setSpectrum->GetNewUnitValue(input);     // Get the new unit
-        primaryGenerator->setEnergy(newFit, newUnit);                   // Set the energy of the primary generator to sample the spectrum
+    else if (command == setSpectrum){                                                   // Set Spectrum Command
+        G4String filename = input;                                                      // Get the filename
+
+        ifstream spectrum_file(filename);                                               // Open a file
+        G4String unit;                                                                  // First line is the unit
+        int lines;                                                                      // Second line is the number of rows
+
+        spectrum_file >> unit;                                                          // Collect the unit from the file
+        spectrum_file >> lines;                                                         // Collect the number of rows
+
+        G4double* pdf       = new G4double[lines];                                      // Store the pdf
+        G4double* energy    = new G4double[lines];                                      // Store the energies
+        for (int i=0; i<lines; i++) spectrum_file >> energy[i] >> pdf[i];               // Get both from each line
+        spectrum_file.close();                                                          // Close the file
+
+        primaryGenerator->setEnergy(pdf, energy, lines, G4UIcommand::ValueOf(unit));    // Set the energy of the primary generator to sample the spectrum
     }
     
-    else if (command == selectParticle){                                // Select Particle Command
-        G4String newParticle = input;                                   // Get the particle as it is
-        auto particleTable = G4ParticleTable::GetParticleTable();       // Get the particle table
+    else if (command == selectParticle){                                                // Select Particle Command
+        G4String newParticle = input;                                                   // Get the particle as it is
+        auto particleTable = G4ParticleTable::GetParticleTable();                       // Get the particle table
 
         // Find which particle it is
         if (!input.compare("proton"))

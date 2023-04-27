@@ -15,7 +15,7 @@ For any help please contact Panos: po524@nyu.edu
 #include "RunAction.hh"
 
 // Include Geant4 relevant headers
-#include "AnalysisManager.hh"
+#include "G4AnalysisManager.hh"
 #include "G4Run.hh"
 
 
@@ -26,30 +26,14 @@ RunAction::RunAction() : G4UserRunAction()
 {
     // Start the analysis manager
     auto analysisManager = G4AnalysisManager::Instance();
-    analysisManager->SetVerboseLevel(1);
+    analysisManager->SetVerboseLevel(0);
     
     // Create a Default filename that can be changed by the user using UI commands
     G4String defaultFilename = "light1_background_results";
+    analysisManager->SetDefaultFileType("csv");
+    analysisManager->SetNtupleDirectoryName("ntuple");
     analysisManager->SetFileName(defaultFilename);
-    analysisManager->SetNtupleMerging(true);
-}
-
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-// Destructor
-RunAction::~RunAction(){}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-void RunAction::BeginOfRunAction(const G4Run* run)
-{
-    // Print that you are staring a run
-    G4cout << ">>> Run " << run->GetRunID() << " starting..." << G4endl;
-
-    auto analysisManager = G4AnalysisManager::Instance();       // Get an instance of the running analysis manager
-    G4String filename = analysisManager->GetFileName();         // Get the filename the user has set (or default)
-    analysisManager->OpenFile(filename);                        // Open the file
+    // analysisManager->SetNtupleMerging(true);
 
     // Create the structure of the data as an Ntuple (Table)
     analysisManager->CreateNtuple("L1BG","LIGHT-1 Background Energy Depositions");
@@ -67,6 +51,25 @@ void RunAction::BeginOfRunAction(const G4Run* run)
     analysisManager->FinishNtuple();
 }
 
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// Destructor
+RunAction::~RunAction() = default;
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void RunAction::BeginOfRunAction(const G4Run* run)
+{
+    // Print that you are staring a run
+    if (isMaster) G4cout << ">>> Run " << run->GetRunID() << " starting..." << G4endl;
+
+    auto analysisManager = G4AnalysisManager::Instance();       // Get an instance of the running analysis manager
+    analysisManager->Reset();                                   // Clear the bUFfeR
+    G4String filename = analysisManager->GetFileName();         // Get the filename the user has set (or default)
+    analysisManager->OpenFile(filename);                        // Open the file
+}
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void RunAction::EndOfRunAction(const G4Run* run)
@@ -74,6 +77,5 @@ void RunAction::EndOfRunAction(const G4Run* run)
     // Save the data to the file
     auto analysisManager = G4AnalysisManager::Instance();       // Get an instance of the running analysis manager 
     analysisManager->Write();                                   // Write the accumulated data to the file
-    analysisManager->CloseFile();                               // Close it
-    analysisManager->Reset();                                   // Clear the bUFfeR
+    analysisManager->CloseFile(false);                          // Close the file
 }

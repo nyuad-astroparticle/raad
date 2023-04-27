@@ -22,7 +22,6 @@ For any help please contact Panos: po524@nyu.edu
 class PrimaryGeneratorAction;
 class G4UIdirectory;
 class G4UIcmdWithADoubleAndUnit;
-class G4UIcmdWith3VectorAndUnit;
 class G4UIcmdWithAString;
 
 
@@ -41,7 +40,7 @@ private:
     G4UIdirectory* prefix;                          // The prefix of the commands
 
     // The available Commands
-    G4UIcmdWith3VectorAndUnit* setSpectrum;         // Set Set the spectrum by which to sample energies from
+    G4UIcmdWithAString* setSpectrum;                // Set Set the spectrum by which to sample energies from
     G4UIcmdWithADoubleAndUnit* setEnergy;           // Set the energy of the particle for fixed energies
     G4UIcmdWithAString* selectParticle;             // Select between proton, electron, and gamma
 };

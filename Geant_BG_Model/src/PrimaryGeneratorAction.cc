@@ -23,7 +23,7 @@ For any help please contact Panos: po524@nyu.edu
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
 #include "G4PhysicalConstants.hh"
-#include "AnalysisManager.hh"
+#include "G4AnalysisManager.hh"
 
 // Define a constant
 #define SAT_ANGLE 1.225533143 // Half angle of the tangent cone at the earth from the satellite
@@ -36,7 +36,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(EventAction* eventAction)
 {
     // Set the energy picking parameters
     randomizeEnergy     = false;
-    spectrumFit         = G4ThreeVector(1,1,1);
+    entries             = 1;
+    probability         = new G4double[entries];
+    energies            = new G4double[entries];
     energy              = 1.0 * MeV;
     randomUnit          = MeV;
 
@@ -65,6 +67,8 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
     delete particleGun;
     delete particleMessenger;
+    delete[] probability;
+    delete[] energies;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -105,12 +109,12 @@ G4ThreeVector PrimaryGeneratorAction::SampleStartPosition()
     // Generate an angle outside the tangent cone to the earth
 
     // Generate a random position outside
-    G4double theta = (G4UniformRand() * (pi - SAT_ANGLE)) * rad;
+    G4double theta = (G4UniformRand() * (pi - 0*SAT_ANGLE)) * rad;
     G4double phi   = G4UniformRand() * 2*pi * rad;
-    G4double r     = 10 * cm;
+    G4double r     = 35 * cm;
 
     // Then we shift the coordinates so that the origin is at the center of the detector
-    G4ThreeVector delta_center = G4ThreeVector(0,-71.2/2*mm,0);
+    G4ThreeVector delta_center = G4ThreeVector(0,-0*71.2/2*mm,0);
 
     // Calculate the actual position of the particle
     // return G4ThreeVector(5*cm,5*cm,5*cm);
@@ -139,8 +143,23 @@ G4double PrimaryGeneratorAction::SampleEnergy()
     // Check if you want to randomize the energy production
     if (!randomizeEnergy) return energy;
 
-    // Otherwise sample the energy space using the predefined parameters
-    return - std::log((spectrumFit[2] - G4UniformRand())/spectrumFit[0])/spectrumFit[1] * randomUnit;
+    // Otherwise sample the energy space using rejection sampling
+    int i=0;
+    G4double x,y, p_interp;
+    do {
+    // Create a random point
+    x = G4UniformRand()*(energies[entries-1] - energies[0]) + energies[0];
+    y = G4UniformRand();
+
+    // Check if the random point is above the distribution
+    for (i=0; i<entries; i++) if (energies[i] >= x) break;
+    i--;
+
+    //Interpolate the probability
+    p_interp = (probability[i+1]*(x - energies[i]) + probability[i]*(energies[i+1] - x))/(energies[i+1] - energies[i]);
+    } while (y > p_interp);
+
+    return x;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -167,11 +186,17 @@ void PrimaryGeneratorAction::setEnergy(G4double energy){
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void PrimaryGeneratorAction::setEnergy(G4ThreeVector spectrumFit, G4double unit){
+void PrimaryGeneratorAction::setEnergy(G4double* fprobability, G4double* fenergies, G4int entries, G4double unit){
     // Start the randomization of the energy
     setRandomizeEnergy(true);
 
+    // Delete the previous arrays
+    delete[] probability;
+    delete[] energies;
+
     // Set the energy sampling parameters
-    this->spectrumFit = spectrumFit;
+    this->probability = fprobability;
+    this->energies    = fenergies;
+    this->entries     = entries;
     this->randomUnit  = unit;
 }

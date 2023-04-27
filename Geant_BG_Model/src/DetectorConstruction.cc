@@ -95,9 +95,9 @@ void DetectorConstruction::DefineMaterials()
 
     // Lanthanium Bromochloride
     G4Material* LBC         = new G4Material("LBC", density=4.90*g/cm3,ncomponents=3);
-    LBC->AddElement(La, number_of_atoms=1);
-    LBC->AddElement(Br, number_of_atoms=3);
-    LBC->AddElement(Cl, number_of_atoms=1);
+    LBC->AddElement(La, 25.00 * perCent);
+    LBC->AddElement(Br, 71.25 * perCent);
+    LBC->AddElement(Cl,  3.75 * perCent);
 
     // Some other bismuth germanium stuff
     G4Material* BGO         = new G4Material("BGO", density=9.22*g/cm3,ncomponents=3);
@@ -154,7 +154,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
     // Geometry parameters
     G4double worldSizeXY = 20.0*cm;
-    G4double worldSizeZ  = worldSizeXY;
+    G4double worldSizeZ  = worldSizeXY*10;
     G4double epsilon     = 0.01; //*mm;
     G4bool checkOverlaps = true;
 
@@ -205,9 +205,14 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     
     // The crystal Template
     G4VSolid* crystalSolid = new G4Box("crystal1",23./2*mm, 23./2*mm, 45./2*mm);
-    G4LogicalVolume* crystalLogicalVolume = new G4LogicalVolume(
+    G4LogicalVolume* crystalLogicalVolumeCeBr3 = new G4LogicalVolume(
                crystalSolid,                            // The Solid
                CeBr3,                                   // Material
+               "Crystal");                              // A name
+
+    G4LogicalVolume* crystalLogicalVolumeLBC = new G4LogicalVolume(
+               crystalSolid,                            // The Solid
+               LBC,                                     // Material
                "Crystal");                              // A name
 
     // The crystal positions
@@ -221,7 +226,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VPhysicalVolume* crystal1PhysicalVolume = new G4PVPlacement(
                 0,                                      // No rotation
                 crystalPositions[0],                    // Position
-                crystalLogicalVolume,                   // The Logical Volume
+                crystalLogicalVolumeCeBr3,              // The Logical Volume
                 "Crystal1",                             // Name
                 worldLogicalVolume,                     // The World Volume
                 false,                                  // No boolean operation
@@ -231,7 +236,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VPhysicalVolume* crystal2PhysicalVolume = new G4PVPlacement(
                 0,                                      // No rotation
                 crystalPositions[1],                    // Position
-                crystalLogicalVolume,                   // The Logical Volume
+                crystalLogicalVolumeCeBr3,              // The Logical Volume
                 "Crystal2",                             // Name
                 worldLogicalVolume,                     // The World Volume
                 false,                                  // No boolean operation
@@ -242,7 +247,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VPhysicalVolume* crystal3PhysicalVolume = new G4PVPlacement(
                 0,                                      // No rotation
                 crystalPositions[2],                    // Position
-                crystalLogicalVolume,                   // The Logical Volume
+                crystalLogicalVolumeLBC,                // The Logical Volume
                 "Crystal3",                             // Name
                 worldLogicalVolume,                     // The World Volume
                 false,                                  // No boolean operation
@@ -252,7 +257,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VPhysicalVolume* crystal4PhysicalVolume = new G4PVPlacement(
                 0,                                      // No rotation
                 crystalPositions[3],                    // Position
-                crystalLogicalVolume,                   // The Logical Volume
+                crystalLogicalVolumeLBC,                // The Logical Volume
                 "Crystal4",                             // Name
                 worldLogicalVolume,                     // The World Volume
                 false,                                  // No boolean operation
@@ -353,7 +358,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 0,                                      // Copy Number
                 checkOverlaps);                         // Check for overlaps 
 
-    //===================================== Fibreglass Enclosure =====================================
+    //===================================== Aluminum Enclosure =====================================
     G4VSolid* ofiberglass  = new G4Box("ofiberglass",71.2/2*mm, 71.2/2*mm, 47.6/2*mm);
     G4VSolid* ifiberglass  = new G4Box("ifiberglass",(70.+epsilon)/2*mm,(70.+epsilon)/2*mm,(47.6+epsilon)/2*mm);
     G4SubtractionSolid *fiberglass = new G4SubtractionSolid("ofiberglassh",ofiberglass,ifiberglass, 0, G4ThreeVector( 0.*mm, 0.*mm, 0*mm));
@@ -372,6 +377,24 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 false,                                  // Boolean Crap
                 0,                                      // Copy Number  
                 checkOverlaps);                         // Check for Overlaps
+
+    //===================================== Aluminum Cubesat =====================================
+    G4VSolid* cubesatLayer  = new G4Box("cubesatLayer",71.2/2*mm, 71.2/2*mm, 292.2/2*mm);
+
+    G4LogicalVolume* cubesatLayerLogicalVolume = new G4LogicalVolume(
+                cubesatLayer,                           // Solid Volume
+                G4_Al,                                  // Material
+                "cubesatLayerLogicalVolume");           // Name
+    
+    G4VPhysicalVolume* cubesatLayerPhysicalVolume = new G4PVPlacement(
+                0,                                      // Rotation
+                G4ThreeVector(0.,0.,(47.6+292.2)/2*mm), // Position
+                cubesatLayerLogicalVolume,              // Logical Volume
+                "cubesatLayer",                         // Name
+                worldLogicalVolume,                     // World Volume
+                false,                                  // Boolean Crap
+                0,                                      // Copy Number  
+                checkOverlaps);                         // Check for Overlaps
         
     //==============================================================================================
 
@@ -379,6 +402,8 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     //===================================== Visualization attributes =====================================
 
     G4VisAttributes* blue       = new G4VisAttributes(G4Colour(0.0, 0.0, 1.0, 0.3));
+    blue->SetVisibility(true);
+    G4VisAttributes* orange     = new G4VisAttributes(G4Colour(1.0, 0.647, 0.0, 0.3));
     blue->SetVisibility(true);
     G4VisAttributes* red        = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0, 0.3));
     red->SetVisibility(true);
@@ -395,12 +420,14 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
 
     worldLogicalVolume          -> SetVisAttributes(invisible);
-    crystalLogicalVolume        -> SetVisAttributes(blue);
+    crystalLogicalVolumeCeBr3   -> SetVisAttributes(blue);
+    crystalLogicalVolumeLBC     -> SetVisAttributes(orange);
     olboxLogicalVolume          -> SetVisAttributes(red);
     aluminiumBoxLogicalVolume   -> SetVisAttributes(green);
     vetoLogicalVolume           -> SetVisAttributes(white);
     momentiveLogicalVolume      -> SetVisAttributes(yellow);
     fiberglassLogicalVolume     -> SetVisAttributes(nyu);
+    cubesatLayerLogicalVolume   -> SetVisAttributes(white);
 
     // Return the physical world volume
     return worldPhysicalVolume;
