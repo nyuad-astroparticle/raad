@@ -154,7 +154,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
     // Geometry parameters
     G4double worldSizeXY = 20.0*cm;
-    G4double worldSizeZ  = worldSizeXY*10;
+    G4double worldSizeZ  = worldSizeXY;//*10;
     G4double epsilon     = 0.01; //*mm;
     G4bool checkOverlaps = true;
 
@@ -379,22 +379,22 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                 checkOverlaps);                         // Check for Overlaps
 
     //===================================== Aluminum Cubesat =====================================
-    G4VSolid* cubesatLayer  = new G4Box("cubesatLayer",71.2/2*mm, 71.2/2*mm, 292.2/2*mm);
+    // G4VSolid* cubesatLayer  = new G4Box("cubesatLayer",71.2/2*mm, 71.2/2*mm, 292.2/2*mm);
 
-    G4LogicalVolume* cubesatLayerLogicalVolume = new G4LogicalVolume(
-                cubesatLayer,                           // Solid Volume
-                G4_Al,                                  // Material
-                "cubesatLayerLogicalVolume");           // Name
+    // G4LogicalVolume* cubesatLayerLogicalVolume = new G4LogicalVolume(
+    //             cubesatLayer,                           // Solid Volume
+    //             G4_Al,                                  // Material
+    //             "cubesatLayerLogicalVolume");           // Name
     
-    G4VPhysicalVolume* cubesatLayerPhysicalVolume = new G4PVPlacement(
-                0,                                      // Rotation
-                G4ThreeVector(0.,0.,(47.6+292.2)/2*mm), // Position
-                cubesatLayerLogicalVolume,              // Logical Volume
-                "cubesatLayer",                         // Name
-                worldLogicalVolume,                     // World Volume
-                false,                                  // Boolean Crap
-                0,                                      // Copy Number  
-                checkOverlaps);                         // Check for Overlaps
+    // G4VPhysicalVolume* cubesatLayerPhysicalVolume = new G4PVPlacement(
+    //             0,                                      // Rotation
+    //             G4ThreeVector(0.,0.,(47.6+292.2)/2*mm), // Position
+    //             cubesatLayerLogicalVolume,              // Logical Volume
+    //             "cubesatLayer",                         // Name
+    //             worldLogicalVolume,                     // World Volume
+    //             false,                                  // Boolean Crap
+    //             0,                                      // Copy Number  
+    //             checkOverlaps);                         // Check for Overlaps
         
     //==============================================================================================
 
@@ -427,7 +427,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     vetoLogicalVolume           -> SetVisAttributes(white);
     momentiveLogicalVolume      -> SetVisAttributes(yellow);
     fiberglassLogicalVolume     -> SetVisAttributes(nyu);
-    cubesatLayerLogicalVolume   -> SetVisAttributes(white);
+    // cubesatLayerLogicalVolume   -> SetVisAttributes(white);
 
     // Return the physical world volume
     return worldPhysicalVolume;

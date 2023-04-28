@@ -35,6 +35,3 @@
 # Draw some Axes
 /vis/scene/add/axes 0 0 0 2 cm auto
 
-# Load experimental parameters
-/light1/setSpectrum ../data/spec.txt
-/light1/selectParticle proton

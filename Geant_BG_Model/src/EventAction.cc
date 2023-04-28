@@ -40,6 +40,7 @@ EventAction::~EventAction(){
 // Zeroes everything
 void EventAction::zeroTrackers()
 {
+    // G4cout << "Welcome to EVENT ACTION!" << G4endl;
     // Initialize Class Parameters
     for(int i=0;i<4;i++) energyDepCrystals[i] = 0;
     energyDepVeto           = 0;

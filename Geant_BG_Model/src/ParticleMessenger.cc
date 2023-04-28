@@ -98,8 +98,8 @@ void ParticleMessenger::SetNewValue(G4UIcommand* command, G4String input)
         G4String filename = input;                                                      // Get the filename
 
         ifstream spectrum_file(filename);                                               // Open a file
-        G4String unit;                                                                  // First line is the unit
-        int lines;                                                                      // Second line is the number of rows
+        G4String unit="MeV";                                                                  // First line is the unit
+        int lines = 1;                                                                      // Second line is the number of rows
 
         spectrum_file >> unit;                                                          // Collect the unit from the file
         spectrum_file >> lines;                                                         // Collect the number of rows
