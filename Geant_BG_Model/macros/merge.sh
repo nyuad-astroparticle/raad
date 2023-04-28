@@ -1,31 +1,33 @@
 #!/bin/bash
 
-# Input directory containing files to be concatenated
-input_dir="."
+# Specify the directory containing the CSV files
+directory="."
 
-# Loop over files in the input directory
-for file in "$input_dir"/*; do
-  # Extract the filename without extension
-  filename="$(basename "$file")"
-  filename_without_extension="${filename%.*}"
+# Change directory to the specified directory
+cd "$directory"
 
-  # Extract the common prefix up to the last underscore
-  common_prefix="${filename_without_extension##*_}"
+# Create a new file to store the merged CSV data
+merged_file="merged.csv"
+> "$merged_file" # Empty the file if it already exists
 
-  # Create an array to store file contents
-  file_contents=()
+# Loop through all CSV files in the directory
+for file in *.csv; do
+  # Skip the merged file itself
+  if [ "$file" == "$merged_file" ]; then
+    continue
+  fi
 
-  # Read first 5 lines of the file
-  IFS=$'\n' read -r -d '' -a file_lines < < (head -n 15 "$file")
+  # Count the number of lines in the file
+  num_lines=$(wc -l < "$file")
 
-  # Append remaining lines to the array
-  for ((i=15; i<${#file_lines[@]}; i++)); do
-    file_contents+=("${file_lines[$i]}")
-  done
-
-  # Concatenate the file contents to the output file
-  echo "Appending contents of $file to $common_prefix"
-  echo "${file_contents[@]}" >> "$input_dir/concat/${common_prefix}.txt"
+  # Check if the file has at least 15 lines
+  if [ "$num_lines" -ge 16 ]; then
+    # Extract data from the 15th line onwards
+    tail -n +16 "$file" >> "$merged_file"
+    echo "Merged data from $file"
+  else
+    echo "Skipped $file as it has less than 16 lines"
+  fi
 done
 
-echo "Files concatenated successfully!"
+echo "Merged CSV files into $merged_file"
