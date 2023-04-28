@@ -76,7 +76,7 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 // Method that actually generates the particles according to any parameters set
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 {
-    // G4cout << "Hello From Generate Primaries" << G4endl;
+    // G4cout << "Hello From Generate Primaries\n energy parameters are: " << randomizeEnergy << G4endl;
 
     // Set the particle of the gun
     particleGun->SetParticleDefinition(particle);
