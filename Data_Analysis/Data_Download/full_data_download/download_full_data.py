@@ -3,7 +3,7 @@
 
 # Import Libraries
 import raadpy as rp
-import numpy as np
+import pandas as pd
 from tqdm import tqdm
 import sys
 
@@ -50,14 +50,14 @@ def download_seq_nr(fileName:str,start:int=0,end:int=None,MAX:int=5000,start_tim
         
         # Exit condition with searching one last time
         if len(new_data) == 0:
-            data = rp.sort(data)    # Sort by "entry_nr"
+            # data = rp.sort(data)    # Sort by "entry_nr"
             break
         
         delete_last_lines()
     return data
 
 # Download script packet
-def download_data(filepath:str='./',buffers=range(1,8),log=True,MAX:int=5000,start_time:str=None,end_time:str=None):
+def download_data(filepath:str='./',buffers=range(1,8),log=True,MAX:int=5000,start:int=0,end:int=None,start_time:str=None,end_time:str=None):
     # List that holds all the filenames
     filenames = []
 
@@ -65,17 +65,18 @@ def download_data(filepath:str='./',buffers=range(1,8),log=True,MAX:int=5000,sta
     for buffer in tqdm(buffers,desc='Downloading Buffer'):
         # Download the data of the buffer
         fileName    = "pc_buff"+str(buffer)
-        data        = download_seq_nr(fileName,MAX=MAX,start_time=start_time,end_time=end_time)
+        data        = download_seq_nr(fileName,MAX=MAX,start_time=start_time,end_time=end_time,start=start,end=end)
 
         # print(data)
 
         # Save the data of the buffer
         fname   = rp.save_raw_data(data,filepath=filepath,buffer=buffer)
+        pd.DataFrame(data).to_csv(filepath+f'buffer_{buffer}_meta.csv',index=False)
         filenames.append(fname)
 
     if log:
         # Download the script log
-        log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time)
+        log         = download_seq_nr('pc_se0_log',MAX=MAX,start_time=start_time,end_time=end_time,start=start,end=end)
         log         = rp.log_to_ascii(log,fileName=filepath+'light1-se-log.txt')
         decoded_log = rp.log_expand(text=log)
 
@@ -88,4 +89,4 @@ def download_data(filepath:str='./',buffers=range(1,8),log=True,MAX:int=5000,sta
         return metadata
 
 if __name__ == '__main__': 
-    download_data(buffers=[1,2,3,4,5,6,7], end_time = '2022-10-30T12:00:00.00') ##2022-10-26T12:00:00.00
+    download_data(buffers=[],log=True)#, end_time = '2022-10-30T12:00:00.00') ##2022-10-26T12:00:00.00

@@ -3,6 +3,8 @@ Data_Analysis/Data_Download/storage/pc_buff1/22.csv
 Data_Analysis/Data_Download/storage/pc_buff1.last
 .DS_Store
 Data/FULL_DATA/*
+Data/Location/*LLA*.csv
+Data/Logs
 Data_Analysis/Background_Model/Data/dump.txt
 Data_Analysis/Data_Download/full_data_download/*.dat
 Data_Analysis/Data_Download/full_data_download/COMPLETE/*
@@ -14,3 +16,12 @@ Data_Analysis/Instrunment-Paper-Plots/*.psd
 Data_Analysis/Instrunment-Paper-Plots/*.NEF*
 Geant_BG_Model/.vscode
 Geant_BG_Model/build/*
+*.ipynb_checkpoints
+Data/RAW
+Data/TAIL
+Data/Light1-tvac
+Data_Analysis/Defined_Logs
+Data_Analysis/Background_Model/Data
+Data_Analysis/Background_Model/spectra
+Data_Analysis/logfile_fixing
+*.psd
