@@ -1,0 +1,14 @@
+# Select the Particle
+/light1/selectParticle gamma
+
+# Set setFileName
+/analysis/setFileName gamma-efficiency.csv
+
+# Tell the simulation to load a spectrum
+/light1/setSpectrum ../spectra/flat_gamma.txt
+
+# Pick a specific detector
+/light1/selectCrystal 0
+
+# Run a bunch of particles
+/run/beamOn 10000000
