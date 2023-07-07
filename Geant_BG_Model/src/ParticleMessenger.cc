@@ -20,6 +20,7 @@ For any help please contact Panos: po524@nyu.edu
 // Include Geant4 Predefined headers
 #include "G4UIdirectory.hh"
 #include "G4UIcmdWithADoubleAndUnit.hh"
+#include "G4UIcmdWithAnInteger.hh"
 #include "G4UIcmdWithAString.hh"
 #include "G4ThreeVector.hh"
 #include "G4ParticleTable.hh"
@@ -68,6 +69,14 @@ ParticleMessenger::ParticleMessenger(PrimaryGeneratorAction* primaryGeneratorAct
     selectParticle->SetDefaultValue("proton");                                          // Default Value
     selectParticle->SetCandidates("proton electron gamma");                             // Available Options (seperated by single spaces)
     selectParticle->AvailableForStates(G4State_Idle);                                   // Available only when nothing is currently running
+
+    // Select crystal
+    selectCrystal = new G4UIcmdWithAnInteger("/light1/selectCrystal",this);             // Command Name
+    selectCrystal->SetGuidance("Select the crystal you want the particles to hit");     // Guidance Line 1
+    selectCrystal->SetGuidance(" enter 1-4 for crystals, 0 for the entire detector.");  // Guidance Line 2
+    selectCrystal->SetParameterName("crystal",false);                                   // Single un-omittable parameter
+    selectCrystal->SetDefaultValue(0);                                                  // Default Value
+    selectCrystal->AvailableForStates(G4State_Idle);                                    // Available only when nothing is currently running
 
 }
 
@@ -123,6 +132,12 @@ void ParticleMessenger::SetNewValue(G4UIcommand* command, G4String input)
             primaryGenerator->setParticle(particleTable->FindParticle("e-"));           // Set the particle to an electron
         else if (!input.compare("gamma")) 
             primaryGenerator->setParticle(particleTable->FindParticle("gamma"));        // Set the particle to a photon
+    }
+
+    // Create an ugly nested if else block to do so
+    if (command == selectCrystal){                                                      // Set Energy Command
+        G4double newCrystal  = selectCrystal->GetNewIntValue(input);                    // Get the new energy
+        primaryGenerator->selectCrystal(newCrystal);                                    // Set the energy of the particles
     }
 
 }

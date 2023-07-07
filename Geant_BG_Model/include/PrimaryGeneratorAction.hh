@@ -38,6 +38,7 @@ public:
     void setRandomizeEnergy(G4bool randomizeEnergy);                            // Sets if the energy is randomized from a given spectrum or not
     void setEnergy(G4double energy);                                            // Sets the fixed Energy
     void setEnergy(G4double*, G4double*, G4int, G4double);                      // Sets the Parameters for sampling the energy
+    void selectCrystal(G4int);                                                 // Select Crystal for the target
 
     // The method that generates the particles
     virtual void GeneratePrimaries(G4Event* event) override;
@@ -56,6 +57,8 @@ private:
     G4ThreeVector SampleStartPosition();                                        // Samples a starting position outside of the detector
     G4ThreeVector SampleMomentumDirection(G4ThreeVector start);                 // Samples momentum direction so that the particle hits the detector
     EventAction* eventAction;                                                   // Event Action instance that collects the imformation of the primaries generated
+    G4int crystal;                                                              // Remember the curret crystal to send
+    G4ThreeVector crystalPositions[4];                                          // Array with crystal positions.
 };
 
 #endif

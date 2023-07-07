@@ -26,7 +26,7 @@ For any help please contact Panos: po524@nyu.edu
 #include "G4AnalysisManager.hh"
 
 // Define a constant
-#define SAT_ANGLE 1.225533143 // Half angle of the tangent cone at the earth from the satellite
+#define SAT_ANGLE 0.785398 // Half angle of the cone = 45 degrees
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -41,6 +41,11 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(EventAction* eventAction)
     energies            = new G4double[entries];
     energy              = 1.0 * MeV;
     randomUnit          = MeV;
+    crystal             = 0;
+    crystalPositions[0] = G4ThreeVector(-14.0*mm,  14.0*mm, 0.);
+    crystalPositions[1] = G4ThreeVector( 14.0*mm,  14.0*mm, 0.);
+    crystalPositions[2] = G4ThreeVector(-14.0*mm, -14.0*mm, 0.);
+    crystalPositions[3] = G4ThreeVector( 14.0*mm, -14.0*mm, 0.);
 
     // Set Up the particle Gun
     G4int numberOfParticles = 1;
@@ -109,16 +114,18 @@ G4ThreeVector PrimaryGeneratorAction::SampleStartPosition()
     // Generate an angle outside the tangent cone to the earth
 
     // Generate a random position outside
-    G4double theta = (G4UniformRand() * (pi - 0*SAT_ANGLE)) * rad;
+    G4double theta = (G4UniformRand() * (SAT_ANGLE) + pi - SAT_ANGLE) * rad;
     G4double phi   = G4UniformRand() * 2*pi * rad;
     G4double r     = 35 * cm;
 
     // Then we shift the coordinates so that the origin is at the center of the detector
-    G4ThreeVector delta_center = G4ThreeVector(0,-0*71.2/2*mm,0);
+    G4ThreeVector delta_center = G4ThreeVector(0,-0*71.2/2*mm,0); // CONE ON THE BOTTOM
+    // G4ThreeVector delta_center = G4ThreeVector(0,0,0*71.2/2*mm); // CONE ON THE SIDE
 
     // Calculate the actual position of the particle
     // return G4ThreeVector(5*cm,5*cm,5*cm);
-    return G4ThreeVector(r*std::sin(theta)*std::cos(phi), r*std::cos(theta), r*std::sin(theta)*std::sin(phi)) + delta_center;
+    return G4ThreeVector(r*std::sin(theta)*std::sin(phi), r*std::sin(theta)*std::cos(phi), r*std::cos(theta)) + delta_center; // CONE ON THE BOTTOM
+    // return G4ThreeVector(r*std::cos(theta), r*std::sin(theta)*std::sin(phi),-r*std::sin(theta)*std::cos(phi)) + delta_center; // CONE ON THE SIDE
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -126,9 +133,11 @@ G4ThreeVector PrimaryGeneratorAction::SampleStartPosition()
 // Sample a momentum direction inside the detector
 G4ThreeVector PrimaryGeneratorAction::SampleMomentumDirection(G4ThreeVector position_start)
 {
+
     // Pick a random ending position inside the volume
-    G4ThreeVector position_end = G4ThreeVector((G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*47.6*mm);
-    // G4ThreeVector position_end = G4ThreeVector(0*cm,0*cm,0*cm);
+    G4ThreeVector position_end;
+    if(crystal == 0) position_end = G4ThreeVector((G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*71.2*mm, (G4UniformRand()-0.5)*47.6*mm);
+    else position_end = G4ThreeVector((G4UniformRand()-0.5)*23.*mm, (G4UniformRand()-0.5)*23.*mm, (G4UniformRand()-0.5)*45.*mm) + crystalPositions[crystal-1];
 
     // Set particle Direction
     G4ThreeVector momentum_direction = position_end - position_start;       // Get a vector in the direction
@@ -166,6 +175,12 @@ G4double PrimaryGeneratorAction::SampleEnergy()
 
 void PrimaryGeneratorAction::setParticle(G4ParticleDefinition* particle){
     this->particle = particle;
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void PrimaryGeneratorAction::selectCrystal(G4int crystal){
+    this->crystal = crystal;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -23,7 +23,7 @@ class PrimaryGeneratorAction;
 class G4UIdirectory;
 class G4UIcmdWithADoubleAndUnit;
 class G4UIcmdWithAString;
-
+class G4UIcmdWithAnInteger;
 
 //Define the manager class
 class ParticleMessenger : public G4UImessenger
@@ -43,6 +43,7 @@ private:
     G4UIcmdWithAString* setSpectrum;                // Set Set the spectrum by which to sample energies from
     G4UIcmdWithADoubleAndUnit* setEnergy;           // Set the energy of the particle for fixed energies
     G4UIcmdWithAString* selectParticle;             // Select between proton, electron, and gamma
+    G4UIcmdWithAnInteger* selectCrystal;            // Select which crystal to send the particles to
 };
 
 #endif
