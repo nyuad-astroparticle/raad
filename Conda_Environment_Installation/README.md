@@ -114,8 +114,8 @@ $ conda install numpy
 $ conda install scipy
 $ conda install astropy
 $ conda install requests
+$ conda install requests-oauthlib
 $ conda install lxml
-$ conda install fitsio
 $ conda install bokeh
 $ conda install pandas
 $ conda install folium 
@@ -123,6 +123,13 @@ $ conda install geoviews-core
 $ conda install geopandas
 $ conda install cartopy
 $ conda install holoviews
+$ conda install conda-build
+$ conda install ipywidgets
+$ conda install ipympl
+$ conda install plotly
+$ conda install sshtunnel
+$ conda install pymysql
+$ conda install jupyter_nbextensions_configurator
 ```
 After this you should be done. Congratulations! Now you can analyze TGF data!
 
