@@ -20909,10 +20909,6 @@
 /light1/setSpectrum ./spectra/electron/26595.68541662.txt
 /run/beamOn 5000
 
-/analysis/setFileName electron-26595.69791662.csv
-/light1/setSpectrum ./spectra/electron/26595.69791662.txt
-/run/beamOn 5000
-
 /analysis/setFileName electron-26595.69999995.csv
 /light1/setSpectrum ./spectra/electron/26595.69999995.txt
 /run/beamOn 5000
@@ -25490,3 +25486,42 @@
 /run/beamOn 5000
 
 /analysis/setFileName electron-26600.93402772.csv
+/light1/setSpectrum ./spectra/electron/26600.93402772.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.93472216.csv
+/light1/setSpectrum ./spectra/electron/26600.93472216.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.93541661.csv
+/light1/setSpectrum ./spectra/electron/26600.93541661.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.93611105.csv
+/light1/setSpectrum ./spectra/electron/26600.93611105.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.9368055.csv
+/light1/setSpectrum ./spectra/electron/26600.9368055.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.93749994.csv
+/light1/setSpectrum ./spectra/electron/26600.93749994.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.99791661.csv
+/light1/setSpectrum ./spectra/electron/26600.99791661.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.99861105.csv
+/light1/setSpectrum ./spectra/electron/26600.99861105.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.9993055.csv
+/light1/setSpectrum ./spectra/electron/26600.9993055.txt
+/run/beamOn 5000
+
+/analysis/setFileName electron-26600.99999994.csv
+/light1/setSpectrum ./spectra/electron/26600.99999994.txt
+/run/beamOn 5000
+

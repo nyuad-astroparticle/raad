@@ -20909,10 +20909,6 @@
 /light1/setSpectrum ./spectra/electron/26595.68541662.txt
 /run/beamOn 5000
 
-/analysis/setFileName electron-26595.69791662.csv
-/light1/setSpectrum ./spectra/electron/26595.69791662.txt
-/run/beamOn 5000
-
 /analysis/setFileName electron-26595.69999995.csv
 /light1/setSpectrum ./spectra/electron/26595.69999995.txt
 /run/beamOn 5000

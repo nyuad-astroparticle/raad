@@ -445,6 +445,10 @@
 /light1/setSpectrum ./spectra/proton/26572.04236111.txt
 /run/beamOn 5000
 
+/analysis/setFileName proton-26572.09583333.csv
+/light1/setSpectrum ./spectra/proton/26572.09583333.txt
+/run/beamOn 5000
+
 /analysis/setFileName proton-26572.09722222.csv
 /light1/setSpectrum ./spectra/proton/26572.09722222.txt
 /run/beamOn 5000
@@ -825,10 +829,6 @@
 /light1/setSpectrum ./spectra/proton/26572.56527777.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26572.56597222.csv
-/light1/setSpectrum ./spectra/proton/26572.56597222.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26572.99097222.csv
 /light1/setSpectrum ./spectra/proton/26572.99097222.txt
 /run/beamOn 5000
@@ -907,10 +907,6 @@
 
 /analysis/setFileName proton-26573.06180555.csv
 /light1/setSpectrum ./spectra/proton/26573.06180555.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26573.1125.csv
-/light1/setSpectrum ./spectra/proton/26573.1125.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26573.11319444.csv
@@ -1603,10 +1599,6 @@
 
 /analysis/setFileName proton-26574.40624999.csv
 /light1/setSpectrum ./spectra/proton/26574.40624999.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26574.40763888.csv
-/light1/setSpectrum ./spectra/proton/26574.40763888.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26574.4673611.csv
@@ -2399,10 +2391,6 @@
 
 /analysis/setFileName proton-26576.31527777.csv
 /light1/setSpectrum ./spectra/proton/26576.31527777.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26576.3736111.csv
-/light1/setSpectrum ./spectra/proton/26576.3736111.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26576.37430554.csv
@@ -3215,6 +3203,10 @@
 
 /analysis/setFileName proton-26578.35138887.csv
 /light1/setSpectrum ./spectra/proton/26578.35138887.txt
+/run/beamOn 5000
+
+/analysis/setFileName proton-26578.35277776.csv
+/light1/setSpectrum ./spectra/proton/26578.35277776.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26578.41180554.csv
@@ -4421,10 +4413,6 @@
 /light1/setSpectrum ./spectra/proton/26581.27777776.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26581.2784722.csv
-/light1/setSpectrum ./spectra/proton/26581.2784722.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26581.33888887.csv
 /light1/setSpectrum ./spectra/proton/26581.33888887.txt
 /run/beamOn 5000
@@ -5289,10 +5277,6 @@
 /light1/setSpectrum ./spectra/proton/26583.81111109.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26583.86874997.csv
-/light1/setSpectrum ./spectra/proton/26583.86874997.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26583.86944442.csv
 /light1/setSpectrum ./spectra/proton/26583.86944442.txt
 /run/beamOn 5000
@@ -5559,10 +5543,6 @@
 
 /analysis/setFileName proton-26584.07499997.csv
 /light1/setSpectrum ./spectra/proton/26584.07499997.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26584.13194442.csv
-/light1/setSpectrum ./spectra/proton/26584.13194442.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26584.13263886.csv
@@ -6457,6 +6437,10 @@
 /light1/setSpectrum ./spectra/proton/26586.17638886.txt
 /run/beamOn 5000
 
+/analysis/setFileName proton-26586.23611108.csv
+/light1/setSpectrum ./spectra/proton/26586.23611108.txt
+/run/beamOn 5000
+
 /analysis/setFileName proton-26586.23680553.csv
 /light1/setSpectrum ./spectra/proton/26586.23680553.txt
 /run/beamOn 5000
@@ -6941,6 +6925,10 @@
 /light1/setSpectrum ./spectra/proton/26587.75624997.txt
 /run/beamOn 5000
 
+/analysis/setFileName proton-26587.81249997.csv
+/light1/setSpectrum ./spectra/proton/26587.81249997.txt
+/run/beamOn 5000
+
 /analysis/setFileName proton-26587.8145833.csv
 /light1/setSpectrum ./spectra/proton/26587.8145833.txt
 /run/beamOn 5000
@@ -7353,10 +7341,6 @@
 /light1/setSpectrum ./spectra/proton/26588.77569441.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26588.77638885.csv
-/light1/setSpectrum ./spectra/proton/26588.77638885.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26588.82986108.csv
 /light1/setSpectrum ./spectra/proton/26588.82986108.txt
 /run/beamOn 5000
@@ -7675,10 +7659,6 @@
 
 /analysis/setFileName proton-26589.16736108.csv
 /light1/setSpectrum ./spectra/proton/26589.16736108.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26589.22777774.csv
-/light1/setSpectrum ./spectra/proton/26589.22777774.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26589.22847219.csv
@@ -8417,6 +8397,10 @@
 /light1/setSpectrum ./spectra/proton/26591.01111107.txt
 /run/beamOn 5000
 
+/analysis/setFileName proton-26591.06874996.csv
+/light1/setSpectrum ./spectra/proton/26591.06874996.txt
+/run/beamOn 5000
+
 /analysis/setFileName proton-26591.0694444.csv
 /light1/setSpectrum ./spectra/proton/26591.0694444.txt
 /run/beamOn 5000
@@ -8491,10 +8475,6 @@
 
 /analysis/setFileName proton-26591.27013885.csv
 /light1/setSpectrum ./spectra/proton/26591.27013885.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26591.27083329.csv
-/light1/setSpectrum ./spectra/proton/26591.27083329.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26591.69583329.csv
@@ -8737,10 +8717,6 @@
 /light1/setSpectrum ./spectra/proton/26591.89930551.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26591.95486107.csv
-/light1/setSpectrum ./spectra/proton/26591.95486107.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26591.95555551.csv
 /light1/setSpectrum ./spectra/proton/26591.95555551.txt
 /run/beamOn 5000
@@ -8871,10 +8847,6 @@
 
 /analysis/setFileName proton-26592.09374996.csv
 /light1/setSpectrum ./spectra/proton/26592.09374996.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26592.0944444.csv
-/light1/setSpectrum ./spectra/proton/26592.0944444.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26592.15486107.csv
@@ -9643,10 +9615,6 @@
 
 /analysis/setFileName proton-26594.00138884.csv
 /light1/setSpectrum ./spectra/proton/26594.00138884.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26594.06041662.csv
-/light1/setSpectrum ./spectra/proton/26594.06041662.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26594.06111107.csv
@@ -10929,12 +10897,12 @@
 /light1/setSpectrum ./spectra/proton/26597.12361106.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26597.1868055.csv
-/light1/setSpectrum ./spectra/proton/26597.1868055.txt
+/analysis/setFileName proton-26597.18611106.csv
+/light1/setSpectrum ./spectra/proton/26597.18611106.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26597.6118055.csv
-/light1/setSpectrum ./spectra/proton/26597.6118055.txt
+/analysis/setFileName proton-26597.1868055.csv
+/light1/setSpectrum ./spectra/proton/26597.1868055.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26597.61249995.csv
@@ -11515,10 +11483,6 @@
 
 /analysis/setFileName proton-26598.70416661.csv
 /light1/setSpectrum ./spectra/proton/26598.70416661.txt
-/run/beamOn 5000
-
-/analysis/setFileName proton-26598.75416661.csv
-/light1/setSpectrum ./spectra/proton/26598.75416661.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26598.75486106.csv
@@ -12157,10 +12121,6 @@
 /light1/setSpectrum ./spectra/proton/26599.98472216.txt
 /run/beamOn 5000
 
-/analysis/setFileName proton-26600.04374994.csv
-/light1/setSpectrum ./spectra/proton/26600.04374994.txt
-/run/beamOn 5000
-
 /analysis/setFileName proton-26600.04444439.csv
 /light1/setSpectrum ./spectra/proton/26600.04444439.txt
 /run/beamOn 5000
@@ -12339,6 +12299,10 @@
 
 /analysis/setFileName proton-26600.67708327.csv
 /light1/setSpectrum ./spectra/proton/26600.67708327.txt
+/run/beamOn 5000
+
+/analysis/setFileName proton-26600.67777772.csv
+/light1/setSpectrum ./spectra/proton/26600.67777772.txt
 /run/beamOn 5000
 
 /analysis/setFileName proton-26600.72777772.csv
