@@ -1,0 +1,6 @@
+/light1/selectParticle electron
+
+/analysis/setNtupleDirName non_trapped
+/analysis/setFileName solar_electron
+/light1/setSpectrum ./spectra/solar_electron.txt
+/run/beamOn 125000000

@@ -1,0 +1,6 @@
+/light1/selectParticle proton
+
+/analysis/setNtupleDirName non_trapped
+/analysis/setFileName solar_proton
+/light1/setSpectrum ./spectra/solar_electron.txt
+/run/beamOn 5000

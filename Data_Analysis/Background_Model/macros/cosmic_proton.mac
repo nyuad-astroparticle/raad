@@ -1,0 +1,6 @@
+/light1/selectParticle proton
+
+/analysis/setNtupleDirName non_trapped
+/analysis/setFileName cosmic_proton
+/light1/setSpectrum ./spectra/cosmic_proton.txt
+/run/beamOn 5000
