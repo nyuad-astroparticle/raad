@@ -23,6 +23,7 @@ For any help please contact Panos: po524@nyu.edu
 #include "G4UImanager.hh"               // Predefined stuff to build the UI
 #include "G4VisExecutive.hh"            // Visualization stuff
 #include "G4UIExecutive.hh"             // Manage Interactive User Interface
+#include "MyPhysicsList.hh"             // Scintillation physics
 
 
 int main(int argc, char** argv){
@@ -38,9 +39,12 @@ int main(int argc, char** argv){
     // Initialize the detector, physics etc.
     runManager->SetUserInitialization(new DetectorConstruction());
 
-    // Add the physics using the default interactions of particles
-    G4VModularPhysicsList* physicsList = new QBBC;
-    physicsList->SetVerboseLevel(0);
+    // // Add the physics using the default interactions of particles
+    // G4VModularPhysicsList* physicsList = new QBBC;
+    // physicsList->SetVerboseLevel(0);
+    // runManager->SetUserInitialization(physicsList);
+
+    G4VUserPhysicsList* physicsList = new MyPhysicsList();
     runManager->SetUserInitialization(physicsList);
 
     // Tell Geant4 to use our way of stepping the particles
