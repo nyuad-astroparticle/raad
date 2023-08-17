@@ -16,8 +16,10 @@ For any help please contact Panos: po524@nyu.edu
 // Include the rest of the headers
 #include "RunAction.hh"
 #include "EventAction.hh"
-#include "SteppingAction.hh"
+// #include "SteppingAction.hh"
 #include "PrimaryGeneratorAction.hh"
+#include "TrackingAction.hh"
+
 
 // Iniclude relevant Geant4 libraries
 
@@ -48,5 +50,6 @@ void ActionInitialization::Build() const
     SetUserAction(new RunAction);
     SetUserAction(eventAction);
     SetUserAction(new PrimaryGeneratorAction(eventAction));
-    SetUserAction(new SteppingAction(eventAction));
+    // SetUserAction(new SteppingAction(eventAction));
+    SetUserAction(new TrackingAction);
 }

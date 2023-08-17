@@ -10,21 +10,26 @@ their energy depositions on a csv file to be read by anyone.
 For any help please contact Panos: po524@nyu.edu
 ***********************************************************/
 
-#ifndef RunAction_h
-#define RunAction_h
+#ifndef RunAction_HH
+#define RunAction_HH
 
-// Include the relevant Geant4 headers
 #include "G4UserRunAction.hh"
+#include "G4String.hh"
 
-// The actual RunAction class
 class RunAction : public G4UserRunAction
 {
-  public:
-    RunAction();                                        // Constructor
-    virtual ~RunAction();                               // Destructor
+    friend class RunActionMaster;
+    
+    public:
+        RunAction();
+        ~RunAction() override;
 
-    virtual void BeginOfRunAction(const G4Run*);        // Method that runs at the beggining, opens the file, etc.
-    virtual void   EndOfRunAction(const G4Run*);        // Method that runs at the end, appending the results, etc.
+        void BeginOfRunAction(const G4Run*) override;
+        void   EndOfRunAction(const G4Run*) override;
+    
+    private:
+        static void BookAnalysis(G4String filename = "TEST.csv", G4bool ntupleMerging = false);
+
 };
 
 #endif

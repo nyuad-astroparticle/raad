@@ -205,12 +205,12 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     
     // The crystal Template
     G4VSolid* crystalSolid = new G4Box("crystal1",23./2*mm, 23./2*mm, 45./2*mm);
-    G4LogicalVolume* crystalLogicalVolumeCeBr3 = new G4LogicalVolume(
+    crystalLogicalVolumeCeBr3 = new G4LogicalVolume(
                crystalSolid,                            // The Solid
                CeBr3,                                   // Material
                "Crystal");                              // A name
 
-    G4LogicalVolume* crystalLogicalVolumeLBC = new G4LogicalVolume(
+    crystalLogicalVolumeLBC = new G4LogicalVolume(
                crystalSolid,                            // The Solid
                LBC,                                     // Material
                "Crystal");                              // A name
@@ -300,7 +300,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4SubtractionSolid *aluminiumBox = new G4SubtractionSolid("oalboxh",oalbox,ialbox, 0, G4ThreeVector( 0.*mm, 0.*mm, 0.8*mm));
 
     // Its logical volume
-    G4LogicalVolume* aluminiumBoxLogicalVolume = new G4LogicalVolume(
+    aluminiumBoxLogicalVolume = new G4LogicalVolume(
                 aluminiumBox,                           // The Box
                 G4_Al,                                  // Material
                 "oalboxhLV");                           // Name
@@ -321,7 +321,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VSolid* ivetobox  = new G4Box("ivetobox",(60.+epsilon)/2*mm,(60.+epsilon)/2*mm,(45.8+epsilon)/2*mm);
     G4SubtractionSolid *veto = new G4SubtractionSolid("vetoBox",ovetobox,ivetobox, 0, G4ThreeVector( 0.*mm, 0.*mm, 0*mm));
 
-    G4LogicalVolume* vetoLogicalVolume = new G4LogicalVolume(
+    vetoLogicalVolume = new G4LogicalVolume(
                 veto,                                   // The Solid
                 polystyrene,                            // Material
                 "vetoLogicalVolume");                   // Name
@@ -343,7 +343,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4SubtractionSolid *momentive = new G4SubtractionSolid("momentiveBox",oMomentivebox,iMomentivebox, 0, G4ThreeVector( 0.*mm, 0.*mm, 0*mm));
     
 
-        G4LogicalVolume* momentiveLogicalVolume = new G4LogicalVolume(
+        momentiveLogicalVolume = new G4LogicalVolume(
                 momentive,                              // Solid Volume
                 RTV615,                                 // Material
                 "momentiveLogicalVolume");              // Name
@@ -363,7 +363,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4VSolid* ifiberglass  = new G4Box("ifiberglass",(70.+epsilon)/2*mm,(70.+epsilon)/2*mm,(47.6+epsilon)/2*mm);
     G4SubtractionSolid *fiberglass = new G4SubtractionSolid("ofiberglassh",ofiberglass,ifiberglass, 0, G4ThreeVector( 0.*mm, 0.*mm, 0*mm));
 
-    G4LogicalVolume* fiberglassLogicalVolume = new G4LogicalVolume(
+    fiberglassLogicalVolume = new G4LogicalVolume(
                 fiberglass,                             // Solid Volume
                 G4_Al,                                  // Material
                 "fiberglassLogicalVolume");             // Name
@@ -434,3 +434,17 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void DetectorConstruction::ConstructSDandField()
+{
+	auto detector = new SensitiveDetector("/SiliconSubstrate","SilliconHitsCollection");
+	G4SDManager::GetSDMpointer()->AddNewDetector(detector);
+	// SetSensitiveDetector(substrateLogical,detector);
+
+	SetSensitiveDetector(crystalLogicalVolumeLBC, detector);
+	SetSensitiveDetector(crystalLogicalVolumeCeBr3, detector);
+	SetSensitiveDetector(aluminiumBoxLogicalVolume, detector);
+	SetSensitiveDetector(vetoLogicalVolume, detector);
+	SetSensitiveDetector(momentiveLogicalVolume, detector);
+	SetSensitiveDetector(fiberglassLogicalVolume, detector);
+}

@@ -17,6 +17,10 @@ For any help please contact Panos: po524@nyu.edu
 // Include Geant4 predefined headers
 #include "G4AnalysisManager.hh"
 #include "G4Event.hh"
+#include "DetectorHit.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4TrajectoryContainer.hh"
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -58,22 +62,30 @@ void EventAction::BeginOfEventAction(const G4Event* event){}
 
 void EventAction::EndOfEventAction(const G4Event* event)
 {
-    // Get the analysis Manager
-    G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-    
-    // Add all the energies to the Analysis Manager
-    analysisManager->FillNtupleSColumn(0,particle);
-    analysisManager->FillNtupleIColumn(1,event->GetEventID());
-    analysisManager->FillNtupleDColumn(2,energyInitial);
-    analysisManager->FillNtupleDColumn(3,energyDepCrystals[0]);
-    analysisManager->FillNtupleDColumn(4,energyDepCrystals[1]);
-    analysisManager->FillNtupleDColumn(5,energyDepCrystals[2]);
-    analysisManager->FillNtupleDColumn(6,energyDepCrystals[3]);
-    analysisManager->FillNtupleDColumn(7,energyDepVeto);
-    analysisManager->FillNtupleDColumn(8,energyDepEnclosure);
-    analysisManager->FillNtupleDColumn(9,energyDepMomentive);
-    analysisManager->FillNtupleDColumn(10,energyDepAluminiumBox);
-    analysisManager->AddNtupleRow();
+    auto eventHitsCollections = event->GetHCofThisEvent();
+    auto analysisManager = G4AnalysisManager::Instance();
+
+    for (int i=0;i<eventHitsCollections->GetNumberOfCollections();i++){
+        auto eventHitsCollection = static_cast<HitsCollection*> (eventHitsCollections->GetHC(i));
+
+        for (int j=0;j<eventHitsCollection->GetSize();j++){
+            DetectorHit* hit = (*eventHitsCollection)[j];
+            
+            analysisManager->FillNtupleIColumn(0,event->GetEventID());
+            analysisManager->FillNtupleIColumn(1,hit->getTrackID());
+            analysisManager->FillNtupleSColumn(2,hit->getParticle());
+            analysisManager->FillNtupleDColumn(3,hit->getEnergyDeposited()/MeV);
+            analysisManager->FillNtupleDColumn(4,hit->getPosition()[0]);
+            analysisManager->FillNtupleDColumn(5,hit->getPosition()[1]);
+            analysisManager->FillNtupleDColumn(6,hit->getPosition()[2]);
+            analysisManager->FillNtupleDColumn(7,hit->getTime()/ns);
+            analysisManager->FillNtupleSColumn(8,hit->getVolume());
+            analysisManager->FillNtupleDColumn(9,hit->getInitialEnergy()/keV);
+            analysisManager->FillNtupleSColumn(10,hit->getOrigin());
+            analysisManager->FillNtupleIColumn(11,hit->getMigrantID());
+            analysisManager->AddNtupleRow();
+        }
+    }
 
     // Set all the energies to zero
     zeroTrackers();

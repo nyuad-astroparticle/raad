@@ -15,6 +15,8 @@ For any help please contact Panos: po524@nyu.edu
 // Include some libraries from Geant4
 #include "G4VUserDetectorConstruction.hh"       // Elements used to construct the detector
 #include "globals.hh"                           // Global variables in some sense
+#include "SensitiveDetector.hh"
+#include "G4SDManager.hh"
 
 // Say that we will overload some the Geant4 predefined classes
 class G4VPhysicalVolume;
@@ -28,14 +30,20 @@ public:
     DetectorConstruction();                         // Constructor
     virtual ~DetectorConstruction();                // Destructor
 
-    // Functions relevant to building the geometry
-    virtual G4VPhysicalVolume* Construct();         // Main Geometry Builder
+    G4VPhysicalVolume *Construct() override;
+    void ConstructSDandField() override;
 
 
 private:
     void DefineMaterials();                         // Define the materials used
     G4VPhysicalVolume* DefineVolumes();             // Construct the geometry of the material
 
+    G4LogicalVolume* crystalLogicalVolumeLBC        = nullptr;  
+    G4LogicalVolume* crystalLogicalVolumeCeBr3      = nullptr;  
+    G4LogicalVolume* aluminiumBoxLogicalVolume      = nullptr;
+    G4LogicalVolume* vetoLogicalVolume              = nullptr;
+    G4LogicalVolume* momentiveLogicalVolume         = nullptr;
+    G4LogicalVolume* fiberglassLogicalVolume        = nullptr;
 };
 
 

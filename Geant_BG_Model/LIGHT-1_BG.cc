@@ -18,11 +18,12 @@ For any help please contact Panos: po524@nyu.edu
 #include "ActionInitialization.hh"      // Sets the way particles move through it
 
 // Now we include the GEANT4 headers
-#include "QBBC.hh"                      // One of the default lists of physical interactions
+// #include "QBBC.hh"                      // One of the default lists of physical interactions
 #include "G4RunManagerFactory.hh"       // Predefined stuff to build the simulation
 #include "G4UImanager.hh"               // Predefined stuff to build the UI
 #include "G4VisExecutive.hh"            // Visualization stuff
 #include "G4UIExecutive.hh"             // Manage Interactive User Interface
+#include "FTFP_BERT.hh"
 
 
 int main(int argc, char** argv){
@@ -39,7 +40,7 @@ int main(int argc, char** argv){
     runManager->SetUserInitialization(new DetectorConstruction());
 
     // Add the physics using the default interactions of particles
-    G4VModularPhysicsList* physicsList = new QBBC;
+    G4VModularPhysicsList* physicsList = new FTFP_BERT;
     physicsList->SetVerboseLevel(0);
     runManager->SetUserInitialization(physicsList);
 
